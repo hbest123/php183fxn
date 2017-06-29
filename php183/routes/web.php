@@ -11,6 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+//Route::get('/admin/index',"Admin\IndexController@index");
+
+Route::get('/admin/user/add','Admin\UserController@add');
+Route::post('/admin/user/insert','Admin\UserController@insert');
+
+Route::get('/admin/user/index','Admin\UserController@index');
+
+Route::post('/admin/user/ajaxrename','Admin\UserController@ajaxRename');
