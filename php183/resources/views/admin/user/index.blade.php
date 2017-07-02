@@ -25,6 +25,13 @@
             </div>
             <!-- /.box-header -->
             <div class="box-body">
+
+             @if(session('info'))
+              <div class="alert alert-danger">
+                {{ session('info') }}
+            </div>
+            @endif
+
             <form action="{{url('/admin/user/index')}}" method="get">
             <div class ="row">
             <div class="col-md-2">
@@ -88,8 +95,11 @@
                   <td class="name">{{$val->name}}</td>
                   <td>{{$val->email}}</td>
                   <td><img style ="width:50px" height:"50px" src="/uploads/avatar/{{$val->avatar}}"/></td>
-                  <td>编辑|删除</td>
+                  <td><a href="{{ url('/admin/user/edit') }}/{{ $val->id}}">编辑</a>|<a data-toggle="modal" class ="del" href="#" data-target="#myModal">删除</a></td>
                 </tr>
+
+                <!-- Button trigger modal -->
+
                 @endforeach
                 </tbody>
                 
@@ -123,33 +133,45 @@ $.ajaxSetup({
         'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
     }
 });
-$(".name").on('dblclick',function(){
-//获取id
+$(".name").one('dblclick', agin);
 
+function agin(){
+
+var td = $(this);
+
+//获取id
 var id = $(this).parent('.parent').find('.ids').html();
 //alert(id);
 //获取原来的值
 
 var oldName = $(this).html();
 var inp = $("<input type='text'>");
+
 inp.val(oldName);
 $(this).html(inp);
-
- inp.on('blur',function(){
+//直接选中文本框
+inp.select();
+inp.on('blur',function(){
 //执行ajax
 var newName = inp.val();
  	$.ajax('/admin/user/ajaxrename',{
 
  		//失去焦点时获取新的用户名
 
-
 		type:'POST',
 		data:{id:id,name:newName},
 		success:function(data){
 			
 			if(data=='0')
-			{
+			{	
 				alert('用户名已存在');
+				td.html(oldName);
+			}else if(data == '1')
+			{
+				td.html(newName);
+			}else
+			{
+				alert('修改失败');
 			}
 		},
 		error:function(data){
@@ -159,9 +181,20 @@ var newName = inp.val();
 		dataType:'json'
 });
 
+ td.one('dblclick',agin);	
+
  });
  
+}
+
+var id = 0;
+
+$(".del").on('click',function(){
+
+    id= $(this).parents('.parent').find('.ids').html();
+ 
 });
+
 </script>
 
 @endsection

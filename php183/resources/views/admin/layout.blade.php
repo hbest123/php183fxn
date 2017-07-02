@@ -37,6 +37,21 @@
   <script src="{{asset('/admin/adminlte/https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js')}}"></script>
   <script src="{{asset('/admin/adminlte/https://oss.maxcdn.com/respond/1.4.2/respond.min.js')}}"></script>
   <![endif]-->
+  <style>
+    .example-modal .modal {
+      position: relative;
+      top: auto;
+      bottom: auto;
+      right: auto;
+      left: auto;
+      display: block;
+      z-index: 1;
+    }
+
+    .example-modal .modal {
+      background: transparent !important;
+    }
+  </style>
 </head>
 <body class="hold-transition skin-blue sidebar-mini">
 <div class="wrapper">
@@ -340,9 +355,23 @@
           </a>
           <ul class="treeview-menu">
             <li class="active"><a href="{{url('/admin/user/add')}}"><i class="fa fa-circle-o"></i> 用户添加</a></li>
-            <li><a href="index2.html"><i class="fa fa-circle-o"></i> Dashboard v2</a></li>
+            <li><a href="{{url('/admin/user/index')}}"><i class="fa fa-circle-o"></i> 用户列表</a></li>
           </ul>
         </li>
+
+        <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>分类管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="{{url('/admin/category/create')}}"><i class="fa fa-circle-o"></i> 分类添加</a></li>
+            <li><a href="{{url('/admin/category')}}"><i class="fa fa-circle-o"></i> 分类列表</a></li>
+          </ul>
+        </li>
+
         <li class="treeview">
           <a href="#">
             <i class="fa fa-files-o"></i>
@@ -749,5 +778,36 @@
 <script src="{{asset('/admin/adminlte/dist/js/demo.js')}}"></script>
 @yield('js')
 
+
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+       确定删除吗?
+      </div>
+      <div class="modal-footer">
+        <button type="button" id="close" class="btn btn-default" data-dismiss="modal">取消</button>
+        <button type="button" id="dele" class="btn btn-primary">确定</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+
+$("#dele").click(function(){
+
+ var url = "/admin/user/delete/"+id;
+ location.href=url;
+
+    
+});
+ 
+</script>
 </body>
 </html>
