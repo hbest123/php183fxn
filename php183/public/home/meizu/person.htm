@@ -1,0 +1,1054 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<meta name="description" content="欢迎登录和注册魅族账号，您可以体验手机云服务功能，包括：在线下载应用，同步手机数据和查找手机等，让您的手机管理更加智能。">
+	<meta name="keywords" content="魅族  meizu 登录flyme 云服务  查找手机  充值账号  MX M9 MX2">
+	<meta content="width=1080" name="viewport">
+	<title>账号管理</title>
+	<link href="person_files/base.css" type="text/css" rel="Stylesheet">
+	<link href="person_files/head.css" type="text/css" rel="Stylesheet">
+	<link href="person_files/cycode.css" rel="stylesheet">
+	<link href="person_files/actmanage.css" type="text/css" rel="Stylesheet">
+<script type="text/javascript" src="person_files/flow.js"></script><script type="text/javascript">
+    var ReceiveEmail = '';
+    var isHit = '';
+    var isBindPhone = true;
+    var isBindEmail = false;
+</script>
+</head>
+<body style="min-height: 848px;">
+	<div id="content" class="content">
+		
+
+
+
+	
+<input id="mz_csrf_tks" value="" type="hidden">
+<div id="header-top" class="headWrap">
+	<a href="http://www.meizu.com/index.html" class="headLogo"><i class="i_icon"></i></a>
+	<ul class="headLeft">
+		<li class="head-store">
+			<a href="http://store.meizu.com/" class="" hidefocus=""><i class="i_icon"></i></a>
+		</li>
+		<li class="head-products">
+			<a href="http://www.meizu.com/products/pro5/summary.html" class="" hidefocus=""><i class="i_icon"></i></a>
+		</li>
+		<li class="head-retail">
+			<a href="http://retail.meizu.com/" class="" hidefocus=""><i class="i_icon"></i></a>
+		</li>
+		<li class="head-flyme">
+			<a href="http://www.flyme.cn/" class="" hidefocus=""><i class="i_icon"></i></a>
+		</li>
+		<li class="head-services">
+			<a href="http://service.meizu.com/" class="" hidefocus=""><i class="i_icon"></i></a>
+		</li>
+		<li class="head-bbs">
+			<a href="http://bbs.meizu.cn/" class="" hidefocus=""><i class="i_icon"></i></a>
+		</li>
+	</ul>
+
+	<div class="headRight">
+		<span id="loginWrap" style="">
+			<a id="head-name" class="linkAGray" href="https://i.flyme.cn/uc/webjsp/member/detail" title="用户571954172">用户571954172</a>
+			<span id="show-msg-pub" class="none">1</span>
+			<span class="line_head">|</span>
+			<a id="head-logout" class="linkAGray" href="javascript:window.location.href%20=%20'https://login.flyme.cn/sso/logout?useruri='+encodeURIComponent(window.location.href);">退出</a>
+		
+		</span>
+
+        <!--密码风险提示-->
+        <div id="show-psw-tip" class="none">
+            <div class="tip-content">
+                <div class="tip-span-msg">当前密码风险较高，请尽快修改密码</div>
+                <div class="tip-cancel"></div>
+            </div>
+        </div>
+
+		<span id="unloginWrap" style="display:none;">
+			<a href="javascript:window.location.href%20=%20'https://login.flyme.cn/sso/logout?useruri='+encodeURIComponent(window.location.href);" class="head-name">登录</a>
+			<span class="line_head">|</span>
+			<a href="https://i.flyme.cn/register" class="head-logout">注册</a>
+		</span>
+	</div>
+</div>
+
+		<div class="flymeContent">
+			
+
+<style type="text/css">
+	.navWrap{
+		height: 58px;
+		border-bottom: #e4e7e9 1px solid;
+	}
+	.navWrap .nav{
+		display: block;
+		float: left;
+		line-height: 58px;
+	}
+	.navWrap .nav li{
+		position: relative;
+		display: inline-block;
+		margin-right: 40px;
+		width: 100px;
+		height: 100%;
+		float: left;
+	}
+	.navWrap .nav li a{
+		display: inline-block;
+		width: 100%;
+		height: 56px;
+		font-size: 16px;
+		text-align: center;
+	}
+	.navWrap .nav .current{
+		margin: 0px auto;
+		height: 2px;
+		width: 100px;
+		overflow: hidden;
+		background-color: #1daeed;
+	}
+</style>
+<div id="navWrap" class="navWrap">
+	<ul class="nav">
+		<li id="accountManage"><a href="https://i.flyme.cn/uc/webjsp/member/detail" class="linkABlue">账号管理</a><div class="current"></div></li>
+		<li id="contact"><a href="https://pay.meizu.com/meibi/account" class="linkAGray">魅币</a></li>
+	</ul>
+</div>
+<div class="clear"></div>
+
+			<div class="topWrap">
+				<div class="top-leftWrap">
+					<img id="userImg" src="person_files/423ab7a3c1724a0aafaef7ff8a18f492z.png">
+					<a id="modifyIconTip" class="modifyIconTip modify" href="#">编辑头像</a>
+					<a class="modifyIconTip-bg"></a>
+				</div>
+				<div class="top-rightWrap">
+					<div id="nickNameTitle" class="lineWrap nickname">
+						<label id="nickName">
+						用户571954172
+						</label>
+						<a id="nickNameEdite" class="pointer modify"><i class="i_icon"></i></a>
+
+
+						<div id="getFunnyName" class="fleft getFunnyName" style="display: none">
+							<div class="fullBtnBlue fleft">
+								<a class="getFunnyNameTitle pointer fleft">抢昵称</a>
+							</div>
+							<div class="fleft nickname_tips">
+								<span id="funnyNameClose" class="fleft">
+									<span class="funnyNameWrap">大家都在抢注昵称，赶快去抢哦!</span>
+									<a class="funnyNameClose">
+										<i class="i_icon pointer"></i>
+									</a>
+								</span>
+							</div>
+						</div>
+					</div>
+					<div id="nickNameCon" class="lineWrap modify_content nickNameCon" style="display: none">
+						<form style="*display:inline" novalidate="novalidate">
+							<div class="lineWrap">
+								<input name="nickname" id="newnickName" class="normalInput" type="text">
+							</div>
+							<div class="clear"></div>
+							<div class="edit">
+								<a class="fullBtnBlue save_form fleft" id="editSave">保存</a>
+								<a class="fullBtnGray cancel_form fleft" id="editCancel">取消</a>
+							</div>
+							<div class="clear"></div>
+						</form>
+					</div>
+					<div class="lineWrap grayTip nameWrapTop" id="getUserNameWrap" style="display: none">
+						<label>账号：</label>
+						<span id="userName">@flyme.cn</span>
+						<input value="" id="memberFlyme" type="hidden">
+					</div>
+					<div id="setUserNameWrap" class="lineWrap grayTip ftop">
+						<a id="setuserName" class="blue modify" href="javascript:;">设置魅族账号</a>
+					</div>
+					<div id="setaccount" class="modify_content" style="display: none">
+						<form novalidate="novalidate">
+						<div>
+							<div class="normalInput">
+								<input name="account" id="flyme" class="username" maxlength="32" placeholder="账号" type="text">
+								<span class="grayTip flymeSpan">@flyme.cn</span>
+							</div><div class="clear"></div>
+							<label class="flymeTip">账号保存后不可修改</label>
+						</div>
+							<div class="clear"></div>
+							<div class="fBtnleft">
+								<a class="fullBtnBlue save_form fleft" id="newSave">保存</a>
+								<a class="fullBtnGray cancel_form fleft" id="newCancel">取消</a>
+								<div class="clear"></div>
+							</div>
+						</form>
+					</div>
+				</div>
+				<div class="clear"></div>
+			</div>
+			<div class="mainWrap">
+				<div class="titleWrap grayBorderB grayBorderTop">
+					<div class="title-leftWrap">
+						<span>账号安全</span>
+					</div>
+					<div class="title-rightWrap">
+						<span>安全等级：</span>
+						<span id="safeLevel" class="orange">50</span>
+						<a id="safeLevelTip" class="pointer"><i class="i_icon"></i></a>
+					</div>
+					<div class="clear"></div>
+				</div>
+				<div class="bodyWrap">
+					<div id="pwdWrap" class="lineWrap pwdWrapTop">
+						<div class="item-right"><a href="javascript:void(0);" class="linkABlue modify" id="modifyPassword">修改</a></div>
+						<div class="item-left">密码</div>
+						<div class="item-middle"></div>
+						<div class="clear"></div>
+					</div>
+					<!-- 修改密码 验证手机 -->
+					<div id="changePasswordWrapFirst" class="grayBorderT grayBorderB modify_content" style="display:none;">
+						
+						
+							<div id="changePwdValidPhone" class="change_valid_wrap" style="">
+								<div class="setQuestion-titleWrap">
+									<span>修改密码（验证手机）</span>
+									
+								</div>
+								<form id="formPwdValidPhone" class="setQuestion-bodyWrap" novalidate="novalidate">
+										<div class="lineWrap">
+											<div class="leftWrap">
+												<label class="leftLabel">手机号</label>
+											</div>
+											<input data-key="kapkey" name="bindPhone" id="ce-u-check-phone" class="normalInput" maxlength="11" type="text">
+										</div>
+										<div class="lineWrap">
+											<div class="leftWrap">
+												<label class="leftLabel">验证码</label>
+											</div>
+											<div class="normalInput bottom">
+												<input name="kapkeyPhone" id="kapkeyTel-check-phone" class="kapkey" maxlength="6" autocomplete="off" type="text">
+												<span class="form-line"></span>
+												<a id="getKey-checkPhoneOld" data-value="23" data-action="bindPhone" href="javascript:void(0);" data-type="1" class="linkABlue invalidBtn get_kapkey">获取验证码</a>
+												<a href="javascript:void(0);" class="linkABlue kapkey_requested" style="display:none;">已发送 <span class="interval_num">60</span></a>
+											</div>
+											<div clear="clear"></div>
+										</div>
+										<div class="lineWrap">
+											<label class="fleft">&nbsp;</label>
+											<a class="fullBtnBlue save_form fleft" id="ce-u-pwd-phone-check">下一步</a>
+											<a class="fullBtnGray cancel_form fleft" id="ce-u-pwd-phone-cancel">取消</a>
+											<div class="clear"></div>
+										</div>
+											<div class="clear"></div>
+								</form>
+							</div>
+					  	
+						
+						
+						
+					</div>
+					<div id="changePasswordWrap" class="grayBorderB modify_content" style="display:none;">
+						<div class="cEmail-titleWrap">
+							<span>修改密码</span>
+						</div>
+						<form class="cEmail-bodyWrap" enctype="application/x-www-form-urlencoded" novalidate="novalidate">
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">原密码</label>
+								</div>
+								<input value="" name="password" id="ce-u-current_pwd" class="normalInput" maxlength="16" type="password">
+							</div>
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">新密码</label>
+								</div>
+								<div class="normalInput">
+									<input name="resetPassword" id="ce-u-new_pwd1" maxlength="16" autocomplete="off" type="text">
+									<input value="" id="ce-u-new_pwd2" maxlength="16" autocomplete="off" style="display:none" type="password">
+									<a id="pwdBtn" class="pwdBtnShow noselect" onselectstart="return false">
+										<i class="i_icon"></i>
+									</a>
+									<div class="clear"></div>
+								</div>
+							</div>
+							<div class="lineWrap">
+								<label class="fleft">&nbsp;</label>
+								<a href="javascript:;" class="fullBtnBlue save_form fleft" id="ce-u-pwdsave">保存</a>
+								<a href="javascript:;" class="fullBtnGray cancel_form fleft" id="ce-u-pwdcancel">取消</a>
+								<div class="clear"></div>
+							</div>
+						</form>
+					</div>
+					<div id="emailWrap" class="lineWrap">
+						<!--if未验证 -->
+						<div class="item-right" style="display:none;">
+							<a id="emailbindEdite" href="javascript:void(0);" class="linkABlue modify" data-type="modify">修改</a>
+						</div>
+						<!-- end if -->
+						<!--if已验证  -->
+						<div class="item-right" style="display:none;">
+							<a id="emailEdite" href="javascript:void(0);" class="linkABlue modify" data-type="modify">修改</a>
+						</div>
+						<!-- end if -->
+						<!--if-->
+						<div class="item-right">
+							<a id="emailBind" href="javascript:void(0);" class="linkABlue modify" data-type="bind">绑定</a>
+						</div>
+						<div class="item-left">邮箱</div>
+						<!--if-->
+						<div class="item-middle" id="email-item-middle1" style="display:none;">
+							<span id="current_email" class="email bold"></span><br>
+							<span class="grayTip">已验证，可通过邮箱找回密码</span>
+						</div>
+						<!-- end if -->
+						<!--if-->
+						<div class="item-middle" id="email-item-middle2">
+							<span class="bold">未绑定</span><br>
+							<span class="grayTip">绑定后可通过邮箱找回密码</span>
+						</div>
+						<!-- end if -->
+						<!--if-->
+						<div class="item-middle" id="email-item-middle3" style="display:none;">
+							<!-- <span class='bold'>绑定未激活</span><br> -->
+							<span class="email bold"></span><br>
+							<span id="notice" class="ftipright">已发验证邮件，请尽快验证</span>
+							<a id="renotice" href="javascript:void(0);" data-status="1" class="linkABlue renotice">重发</a>
+							<span id="timeup" class="timeup" style="display:none;">60</span>
+							<br>
+							<span class="grayTip">验证后可在互动社区发帖、回复等，还可通过邮箱找回密码，提高账号安全级别</span>
+						</div>
+						<!-- end if -->
+						<!-- end if -->
+						<div class="clear"></div>
+					</div>
+					<!-- //绑定输入框 -->
+					<!-- 绑定邮箱第一步，需要先验证密码 -->
+					<div id="bindEmail-step1" class="grayBorderT grayBorderB modify_content " style="display:none;">
+						<div class="cEmail-titleWrap">
+							<span id="editEmail">绑定邮箱（验证密码）</span>
+						</div>
+						<form class="cEmail-bodyWrap" novalidate="novalidate">
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">账号密码</label>
+								</div>
+								<input value="" name="password" id="ce-u-password-bind" class="normalInput" maxlength="16" type="password">
+							</div>
+
+							<div class="lineWrap">
+								<label class="fleft">&nbsp;</label>
+								<a class="fullBtnBlue ce-u-save save_form fleft" id="bindEmail-step1-savenext">下一步</a>
+								<a class="fullBtnGray ce-u-cancel cancel_form fleft" id="bindEmail-step1-savenextcancel">取消</a>
+								<div class="clear"></div>
+							</div>
+									<div class="clear"></div>
+						</form>
+					</div>
+					<!-- 绑定邮箱第二 -->
+					<div id="bindEmailWrap" class="grayBorderT grayBorderB modify_content" style="display: none;">
+						<div class="bindEmail-titleWrap">
+							<span>绑定邮箱</span>
+						</div>
+						<form class="bindEmail-bodyWrap" novalidate="novalidate">
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">邮箱</label>
+								</div>
+								<input data-key="kapkey" name="email" id="ce-u-bind_email" class="normalInput" maxlength="32" type="text">
+							</div>
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">邮件验证码</label>
+								</div>
+								<div class="normalInput bottom">
+									<input name="kapkey" id="kapkey" class="kapkey" maxlength="6" autocomplete="off" type="text">
+									<span class="form-line"></span>
+									<a id="getKey-bindEmail" data-value="5" href="javascript:void(0);" data-type="1" class="linkABlue invalidBtn get_kapkey">获取验证码</a>
+									<a href="javascript:void(0);" class="linkABlue kapkey_requested" style="display:none;">已发送 <span class="interval_num">60</span></a>
+								</div>
+							</div>
+							<div class="lineWrap">
+								<label class="fleft">&nbsp;</label>
+								<a class="fullBtnBlue ce-u-save save_form fleft" id="ce-u-bindsave">保存</a>
+								<a class="fullBtnGray ce-u-cancel cancel_form fleft" id="ce-u-bindcancel">取消</a>
+								<div class="clear"></div>
+							</div>
+						</form>
+					</div>
+					<div id="changeEmailWrap-unactiveone" class="grayBorderT grayBorderB modify_content " style="display:none;">
+						<div class="cEmail-titleWrap">
+							<span id="editEmail">修改邮箱（验证密码）</span>
+						</div>
+						<form class="cEmail-bodyWrap" novalidate="novalidate">
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">账号密码</label>
+								</div>
+								<input value="" name="password" id="ce-u-password" class="normalInput" maxlength="16" type="password">
+							</div>
+
+							<div class="lineWrap">
+								<label class="fleft">&nbsp;</label>
+								<a class="fullBtnBlue ce-u-save save_form fleft" id="ce-u-savenext">下一步</a>
+								<a class="fullBtnGray ce-u-cancel cancel_form fleft" id="ce-u-savenextcancel">取消</a>
+								<div class="clear"></div>
+							</div>
+									<div class="clear"></div>
+						</form>
+					</div>
+					<div id="changeEmailWrap-unactive" class="grayBorderT grayBorderB modify_content " style="display:none;">
+						<div class="cEmail-titleWrap">
+							<span id="editEmail">修改邮箱</span>
+						</div>
+						<form class="cEmail-bodyWrap" novalidate="novalidate">
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">新邮箱</label>
+								</div>
+								<input data-key="kapkey" name="email" id="ce-u-new_email" class="normalInput" maxlength="32" type="text">
+							</div>
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">邮件验证码</label>
+								</div>
+								<div class="normalInput bottom">
+									<input name="kapkey" id="ce-u-passwordvalidate_code" class="kapkey" maxlength="6" autocomplete="off" type="text">
+									<span class="form-line"></span>
+									<a id="getKeynewEmail" data-value="15" href="javascript:void(0);" data-type="1" class="linkABlue invalidBtn get_kapkey">获取验证码</a>
+									<a href="javascript:void(0);" class="linkABlue kapkey_requested" style="display:none;">已发送 <span class="interval_num">60</span></a>
+								</div>
+							</div>
+							<div class="lineWrap">
+								<label class="fleft">&nbsp;</label>
+								<a class="fullBtnBlue ce-u-save save_form fleft" id="ce-u-save">保存</a>
+								<a class="fullBtnGray ce-u-cancel cancel_form fleft" id="ce-u-cancel">取消</a>
+								<div class="clear"></div>
+							</div>
+						</form>
+					</div>
+					<!-- //编辑输入框，激活 -->
+					<div id="changeEmailWrap-activeone" class="grayBorderT grayBorderB modify_content" style="display:none;">
+						<div class="cEmail-titleWrap">
+							<span>修改邮箱第一步</span>
+						</div>
+						<form class="cEmail-bodyWrap" novalidate="novalidate">
+							<div class="lineWrap" id="currentEmail">
+							    <div class="leftWrap">
+									<label class="leftLabel">当前邮箱</label>
+								</div>
+								<span id="ce-u-current_email" data-key="kapkey" class="normalInput current_email bold"></span>
+							</div>
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">邮件验证码</label>
+								</div>
+								<div class="normalInput bottom">
+									<input name="kapkey" id="ce-u-passwordvalidate_codeone" class="kapkey" maxlength="6" autocomplete="off" type="text">
+									<span class="form-line"></span>
+									<a id="getKeyone" data-value="12" href="javascript:void(0);" data-type="2" class="linkABlue  get_kapkey">获取验证码</a>
+									<a href="javascript:void(0);" class="linkABlue kapkey_requested" style="display:none;">已发送 <span class="interval_num">60</span></a>
+								</div>
+							</div>
+							<div class="lineWrap">
+								<label class="fleft">&nbsp;</label>
+								<a class="fullBtnBlue ce-u-save save_form fleft" id="ce-u-activenext">下一步</a>
+								<a class="fullBtnGray ce-u-cancel cancel_form fleft" id="ce-u-activecancel">取消</a>
+								<div class="clear"></div>
+							</div>
+						</form>
+					</div>
+					<div id="changeEmailWrap-active-two" class="grayBorderT grayBorderB modify_content" style="display:none;">
+						<div class="cEmail-titleWrap">
+							<span>修改邮箱第二步</span>
+						</div>
+						<form class="cEmail-bodyWrap" novalidate="novalidate">
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">新邮箱</label>
+								</div>
+								<input data-key="kapkey" name="email" id="ce-u-active_email" class="normalInput" maxlength="32" type="text">
+							</div>
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">邮件验证码</label>
+								</div>
+								<div class="normalInput bottom">
+									<input name="kapkey" id="ce-u-passwordvalidate_codetwo" class="kapkey" maxlength="6" autocomplete="off" type="text">
+									<span class="form-line"></span>
+									<a id="getKey-activeEmail" data-value="12" href="javascript:void(0);" data-type="1" class="linkABlue invalidBtn get_kapkey">获取验证码</a>
+									<a href="javascript:void(0);" class="linkABlue kapkey_requested" style="display:none;">已发送 <span class="interval_num">60</span></a>
+								</div>
+							</div>
+							<div class="lineWrap">
+								<label class="fleft">&nbsp;</label>
+								<a class="fullBtnBlue save_form fleft" id="ce-u-activesave">保存</a>
+								<a class="fullBtnGray cancel_form fleft" id="ce-u-activecanceltwo">取消</a>
+								<div class="clear"></div>
+							</div>
+						</form>
+					</div>
+					<div id="telWrap" class="lineWrap">
+						<!--if-->
+						<div class="item-right">
+							<a id="editMobile" href="javascript:void(0);" class="linkABlue modify">修改</a>
+						</div>
+						<!-- end if -->
+						<!--if-->
+						<div class="item-right" style="display:none;">
+							<a id="bindMobile" href="javascript:void(0);" class="linkABlue modify">绑定</a>
+						</div>
+						<!-- end if -->
+						<div class="item-left">手机号码</div>
+						<!--if-->
+						<div class="item-middle" id="telModify">
+							<span id="current_phone" class="bold">157****8614</span><br>
+							<span class="grayTip">已验证，可通过手机找回密码</span>
+						</div>
+						<!-- end if -->
+						<!--if-->
+						<div class="item-middle" id="telBind" style="display:none;">
+							<span class="bold">未绑定</span><br>
+							<span class="grayTip">绑定后可通过手机号码登录、找回密码、异常登录提醒、<br>登录不常用设备验证</span>
+						</div>
+						<!-- end if -->
+						<div class="clear"></div>
+					</div>
+					<!-- 绑定手机，验证密码 -->
+					<div id="bindTel-step1" class="grayBorderT grayBorderB modify_content" style="display:none;">
+						<div class="setQuestion-titleWrap">
+							<span>绑定手机号（验证密码）</span>
+						</div>
+						<form class="setQuestion-bodyWrap" novalidate="novalidate">
+								<div class="lineWrap">
+									<div class="leftWrap">
+										<label class="leftLabel">账号密码</label>
+									</div>
+									<input value="" name="password" id="ce-u-passwordNew-bindTel" class="normalInput" maxlength="16" type="password">
+								</div>
+								<div class="lineWrap">
+									<label class="fleft">&nbsp;</label>
+									<a class="fullBtnBlue save_form fleft" id="bindTel-step1-setTelCheckPassSave">下一步</a>
+									<a class="fullBtnGray cancel_form fleft" id="bindTel-step1-setTelCheckPassCancel">取消</a>
+									<div class="clear"></div>
+								</div>
+									<div class="clear"></div>
+						</form>
+					</div>
+					<div id="bindTel-step2" class="change_valid_wrap grayBorderT grayBorderB modify_content" style="display:none">
+						<div class="cEmail-titleWrap">
+							<span>绑定手机号（验证邮箱）</span>
+							
+								<a href="javascript:void(0);" style="font-size:14px;" class=" linkABlue modify show_valid_wrap" id="showValidPhone">手机验证</a>
+							
+						</div>
+						<form id="formPwdValidEmail" class="cEmail-bodyWrap" novalidate="novalidate">
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">邮箱</label>
+								</div>
+								<input data-key="kapkey" name="bindEmail" id="ce-u-bindphone_email" class="normalInput" maxlength="32" type="text">
+							</div>
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">邮件验证码</label>
+								</div>
+								<div class="normalInput bottom">
+									<input name="kapkeyEmail" id="kapkeyTel-check-email-bind" class="kapkey" maxlength="6" autocomplete="off" type="text">
+									<span class="form-line"></span>
+									<a id="getKeyoneBindPhone" data-value="26" href="javascript:void(0);" data-type="2" class="linkABlue invalidBtn get_kapkey">获取验证码</a>
+									<a href="javascript:void(0);" class="linkABlue kapkey_requested" style="display:none;">已发送 <span class="interval_num">60</span></a>
+								</div>
+							</div>
+							<div class="lineWrap">
+								<label class="fleft">&nbsp;</label>
+								<a class="fullBtnBlue save_form fleft" id="ce-u-phone-email-check-bind">下一步</a>
+								<a class="fullBtnGray cancel_form fleft" id="ce-u-phone-email-cancel-bind">取消</a>
+								<div class="clear"></div>
+							</div>
+						</form>
+					</div>
+					<div id="bindTelWrap" class="grayBorderT grayBorderB modify_content" style="display: none;">
+						<div class="bindTel-titleWrap">
+							<span>绑定手机号码</span>
+						</div>
+						<form class="bindTel-bodyWrap" novalidate="novalidate">
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">手机号码</label>
+								</div>
+								<!-- <input type="text" data-key="kapkey" name="phone" id="ce-u-bind_tel" class='normalInput' /> -->
+								<div class="normalInput cycode-box show-cycode" id="cycode-box">
+	                                <div class="cycode-selectbox">
+	                                    <span class="cycode-selected">
+	                                        <span class="ipt-cycode" id="cycode">+86</span>
+	                                        <i class="arrow-down"></i>
+	                                    </span>
+	                                    <input data-key="kapkey" name="phone" id="ce-u-bind_tel" maxlength="11" type="text">
+	                                </div>
+	                                <div id="cycode-container" class="cycode-container"><div class="country-code"><div class="container"><div class="head">常用</div><ul><li data-code="+86" data-brief="CN"><span class="record-country">中国</span><span class="record-code">+86</span></li><li data-code="+886" data-brief="TW"><span class="record-country">中国台湾</span><span class="record-code">+886</span></li><li data-code="+852" data-brief="HK"><span class="record-country">中国香港</span><span class="record-code">+852</span></li><li data-code="+55" data-brief="BR"><span class="record-country">Brazil</span><span class="record-code">+55</span></li><li data-code="+91" data-brief="IN"><span class="record-country">India</span><span class="record-code">+91</span></li><li data-code="+62" data-brief="ID"><span class="record-country">Indonesia</span><span class="record-code">+62</span></li><li data-code="+60" data-brief="MY"><span class="record-country">Malaysia</span><span class="record-code">+60</span></li></ul></div><div class="container"><div class="head">A</div><ul><li data-code="+376" data-brief="AD"><span class="record-country">Andorra</span><span class="record-code">+376</span></li><li data-code="+93" data-brief="AF"><span class="record-country">Afghanistan</span><span class="record-code">+93</span></li><li data-code="+1" data-brief="AG"><span class="record-country">Antigua and Barbuda</span><span class="record-code">+1</span></li><li data-code="+1" data-brief="AI"><span class="record-country">Anguilla</span><span class="record-code">+1</span></li><li data-code="+355" data-brief="AL"><span class="record-country">Albania</span><span class="record-code">+355</span></li><li data-code="+374" data-brief="AM"><span class="record-country">Armenia</span><span class="record-code">+374</span></li><li data-code="+244" data-brief="AO"><span class="record-country">Angola</span><span class="record-code">+244</span></li><li data-code="+54" data-brief="AR"><span class="record-country">Argentina</span><span class="record-code">+54</span></li><li data-code="+1" data-brief="AS"><span class="record-country">American Samoa</span><span class="record-code">+1</span></li><li data-code="+43" data-brief="AT"><span class="record-country">Austria</span><span class="record-code">+43</span></li><li data-code="+61" data-brief="AU"><span class="record-country">Australia</span><span class="record-code">+61</span></li><li data-code="+297" data-brief="AW"><span class="record-country">Aruba</span><span class="record-code">+297</span></li><li data-code="+994" data-brief="AZ"><span class="record-country">Azerbaijan</span><span class="record-code">+994</span></li><li data-code="+213" data-brief="DZ"><span class="record-country">Algeria</span><span class="record-code">+213</span></li></ul></div><div class="container"><div class="head">B</div><ul><li data-code="+387" data-brief="BA"><span class="record-country">Bosnia and Herzegovina</span><span class="record-code">+387</span></li><li data-code="+1" data-brief="BB"><span class="record-country">Barbados</span><span class="record-code">+1</span></li><li data-code="+880" data-brief="BD"><span class="record-country">Bangladesh</span><span class="record-code">+880</span></li><li data-code="+32" data-brief="BE"><span class="record-country">Belgium</span><span class="record-code">+32</span></li><li data-code="+226" data-brief="BF"><span class="record-country">Burkina Faso</span><span class="record-code">+226</span></li><li data-code="+359" data-brief="BG"><span class="record-country">Bulgaria</span><span class="record-code">+359</span></li><li data-code="+973" data-brief="BH"><span class="record-country">Bahrain</span><span class="record-code">+973</span></li><li data-code="+257" data-brief="BI"><span class="record-country">Burundi</span><span class="record-code">+257</span></li><li data-code="+229" data-brief="BJ"><span class="record-country">Benin</span><span class="record-code">+229</span></li><li data-code="+1" data-brief="BM"><span class="record-country">Bermuda</span><span class="record-code">+1</span></li><li data-code="+673" data-brief="BN"><span class="record-country">Brunei</span><span class="record-code">+673</span></li><li data-code="+591" data-brief="BO"><span class="record-country">Bolivia</span><span class="record-code">+591</span></li><li data-code="+599" data-brief="BQ"><span class="record-country">Bonaire, Sint Eustatius and Saba</span><span class="record-code">+599</span></li><li data-code="+55" data-brief="BR"><span class="record-country">Brazil</span><span class="record-code">+55</span></li><li data-code="+1" data-brief="BS"><span class="record-country">Bahamas</span><span class="record-code">+1</span></li><li data-code="+975" data-brief="BT"><span class="record-country">Bhutan</span><span class="record-code">+975</span></li><li data-code="+267" data-brief="BW"><span class="record-country">Botswana</span><span class="record-code">+267</span></li><li data-code="+375" data-brief="BY"><span class="record-country">Belarus</span><span class="record-code">+375</span></li><li data-code="+501" data-brief="BZ"><span class="record-country">Belize</span><span class="record-code">+501</span></li><li data-code="+246" data-brief="IO"><span class="record-country">British Indian Ocean Territory</span><span class="record-code">+246</span></li><li data-code="+1" data-brief="VG"><span class="record-country">British Virgin Islands</span><span class="record-code">+1</span></li></ul></div><div class="container"><div class="head">C</div><ul><li data-code="+1" data-brief="CA"><span class="record-country">Canada</span><span class="record-code">+1</span></li><li data-code="+61" data-brief="CC"><span class="record-country">Cocos Islands</span><span class="record-code">+61</span></li><li data-code="+236" data-brief="CF"><span class="record-country">Central African Republic</span><span class="record-code">+236</span></li><li data-code="+242" data-brief="CG"><span class="record-country">Congo</span><span class="record-code">+242</span></li><li data-code="+225" data-brief="CI"><span class="record-country">Côte d'Ivoire</span><span class="record-code">+225</span></li><li data-code="+682" data-brief="CK"><span class="record-country">Cook Islands</span><span class="record-code">+682</span></li><li data-code="+56" data-brief="CL"><span class="record-country">Chile</span><span class="record-code">+56</span></li><li data-code="+237" data-brief="CM"><span class="record-country">Cameroon</span><span class="record-code">+237</span></li><li data-code="+86" data-brief="CN"><span class="record-country">China</span><span class="record-code">+86</span></li><li data-code="+57" data-brief="CO"><span class="record-country">Colombia</span><span class="record-code">+57</span></li><li data-code="+506" data-brief="CR"><span class="record-country">Costa Rica</span><span class="record-code">+506</span></li><li data-code="+53" data-brief="CU"><span class="record-country">Cuba</span><span class="record-code">+53</span></li><li data-code="+238" data-brief="CV"><span class="record-country">Cape Verde</span><span class="record-code">+238</span></li><li data-code="+599" data-brief="CW"><span class="record-country">Curaçao</span><span class="record-code">+599</span></li><li data-code="+61" data-brief="CX"><span class="record-country">Christmas Island</span><span class="record-code">+61</span></li><li data-code="+357" data-brief="CY"><span class="record-country">Cyprus</span><span class="record-code">+357</span></li><li data-code="+420" data-brief="CZ"><span class="record-country">Czech Republic</span><span class="record-code">+420</span></li><li data-code="+385" data-brief="HR"><span class="record-country">Croatia</span><span class="record-code">+385</span></li><li data-code="+855" data-brief="KH"><span class="record-country">Cambodia</span><span class="record-code">+855</span></li><li data-code="+269" data-brief="KM"><span class="record-country">Comoros</span><span class="record-code">+269</span></li><li data-code="+1" data-brief="KY"><span class="record-country">Cayman Islands</span><span class="record-code">+1</span></li><li data-code="+235" data-brief="TD"><span class="record-country">Chad</span><span class="record-code">+235</span></li></ul></div><div class="container"><div class="head">D</div><ul><li data-code="+253" data-brief="DJ"><span class="record-country">Djibouti</span><span class="record-code">+253</span></li><li data-code="+45" data-brief="DK"><span class="record-country">Denmark</span><span class="record-code">+45</span></li><li data-code="+1" data-brief="DM"><span class="record-country">Dominica</span><span class="record-code">+1</span></li><li data-code="+1" data-brief="DO"><span class="record-country">Dominican Republic</span><span class="record-code">+1</span></li></ul></div><div class="container"><div class="head">E</div><ul><li data-code="+593" data-brief="EC"><span class="record-country">Ecuador</span><span class="record-code">+593</span></li><li data-code="+372" data-brief="EE"><span class="record-country">Estonia</span><span class="record-code">+372</span></li><li data-code="+20" data-brief="EG"><span class="record-country">Egypt</span><span class="record-code">+20</span></li><li data-code="+291" data-brief="ER"><span class="record-country">Eritrea</span><span class="record-code">+291</span></li><li data-code="+251" data-brief="ET"><span class="record-country">Ethiopia</span><span class="record-code">+251</span></li><li data-code="+240" data-brief="GQ"><span class="record-country">Equatorial Guinea</span><span class="record-code">+240</span></li><li data-code="+503" data-brief="SV"><span class="record-country">El Salvador</span><span class="record-code">+503</span></li></ul></div><div class="container"><div class="head">F</div><ul><li data-code="+358" data-brief="FI"><span class="record-country">Finland</span><span class="record-code">+358</span></li><li data-code="+679" data-brief="FJ"><span class="record-country">Fiji</span><span class="record-code">+679</span></li><li data-code="+500" data-brief="FK"><span class="record-country">Falkland Islands</span><span class="record-code">+500</span></li><li data-code="+298" data-brief="FO"><span class="record-country">Faroe Islands</span><span class="record-code">+298</span></li><li data-code="+33" data-brief="FR"><span class="record-country">France</span><span class="record-code">+33</span></li><li data-code="+594" data-brief="GF"><span class="record-country">French Guiana</span><span class="record-code">+594</span></li><li data-code="+689" data-brief="PF"><span class="record-country">French Polynesia</span><span class="record-code">+689</span></li></ul></div><div class="container"><div class="head">G</div><ul><li data-code="+49" data-brief="DE"><span class="record-country">Germany</span><span class="record-code">+49</span></li><li data-code="+241" data-brief="GA"><span class="record-country">Gabon</span><span class="record-code">+241</span></li><li data-code="+1" data-brief="GD"><span class="record-country">Grenada</span><span class="record-code">+1</span></li><li data-code="+995" data-brief="GE"><span class="record-country">Georgia</span><span class="record-code">+995</span></li><li data-code="+44" data-brief="GG"><span class="record-country">Guernsey</span><span class="record-code">+44</span></li><li data-code="+233" data-brief="GH"><span class="record-country">Ghana</span><span class="record-code">+233</span></li><li data-code="+350" data-brief="GI"><span class="record-country">Gibraltar</span><span class="record-code">+350</span></li><li data-code="+299" data-brief="GL"><span class="record-country">Greenland</span><span class="record-code">+299</span></li><li data-code="+220" data-brief="GM"><span class="record-country">Gambia</span><span class="record-code">+220</span></li><li data-code="+224" data-brief="GN"><span class="record-country">Guinea</span><span class="record-code">+224</span></li><li data-code="+590" data-brief="GP"><span class="record-country">Guadeloupe</span><span class="record-code">+590</span></li><li data-code="+30" data-brief="GR"><span class="record-country">Greece</span><span class="record-code">+30</span></li><li data-code="+502" data-brief="GT"><span class="record-country">Guatemala</span><span class="record-code">+502</span></li><li data-code="+1" data-brief="GU"><span class="record-country">Guam</span><span class="record-code">+1</span></li><li data-code="+245" data-brief="GW"><span class="record-country">Guinea-Bissau</span><span class="record-code">+245</span></li><li data-code="+592" data-brief="GY"><span class="record-country">Guyana</span><span class="record-code">+592</span></li></ul></div><div class="container"><div class="head">H</div><ul><li data-code="+852" data-brief="HK"><span class="record-country">Hong Kong</span><span class="record-code">+852</span></li><li data-code="+504" data-brief="HN"><span class="record-country">Honduras</span><span class="record-code">+504</span></li><li data-code="+509" data-brief="HT"><span class="record-country">Haiti</span><span class="record-code">+509</span></li><li data-code="+36" data-brief="HU"><span class="record-country">Hungary</span><span class="record-code">+36</span></li></ul></div><div class="container"><div class="head">I</div><ul><li data-code="+62" data-brief="ID"><span class="record-country">Indonesia</span><span class="record-code">+62</span></li><li data-code="+353" data-brief="IE"><span class="record-country">Ireland</span><span class="record-code">+353</span></li><li data-code="+972" data-brief="IL"><span class="record-country">Israel</span><span class="record-code">+972</span></li><li data-code="+44" data-brief="IM"><span class="record-country">Isle Of Man</span><span class="record-code">+44</span></li><li data-code="+91" data-brief="IN"><span class="record-country">India</span><span class="record-code">+91</span></li><li data-code="+964" data-brief="IQ"><span class="record-country">Iraq</span><span class="record-code">+964</span></li><li data-code="+98" data-brief="IR"><span class="record-country">Iran</span><span class="record-code">+98</span></li><li data-code="+354" data-brief="IS"><span class="record-country">Iceland</span><span class="record-code">+354</span></li><li data-code="+39" data-brief="IT"><span class="record-country">Italy</span><span class="record-code">+39</span></li></ul></div><div class="container"><div class="head">J</div><ul><li data-code="+44" data-brief="JE"><span class="record-country">Jersey</span><span class="record-code">+44</span></li><li data-code="+1" data-brief="JM"><span class="record-country">Jamaica</span><span class="record-code">+1</span></li><li data-code="+962" data-brief="JO"><span class="record-country">Jordan</span><span class="record-code">+962</span></li><li data-code="+81" data-brief="JP"><span class="record-country">Japan</span><span class="record-code">+81</span></li></ul></div><div class="container"><div class="head">K</div><ul><li data-code="+254" data-brief="KE"><span class="record-country">Kenya</span><span class="record-code">+254</span></li><li data-code="+996" data-brief="KG"><span class="record-country">Kyrgyzstan</span><span class="record-code">+996</span></li><li data-code="+686" data-brief="KI"><span class="record-country">Kiribati</span><span class="record-code">+686</span></li><li data-code="+965" data-brief="KW"><span class="record-country">Kuwait</span><span class="record-code">+965</span></li><li data-code="+7" data-brief="KZ"><span class="record-country">Kazakhstan</span><span class="record-code">+7</span></li></ul></div><div class="container"><div class="head">L</div><ul><li data-code="+856" data-brief="LA"><span class="record-country">Laos</span><span class="record-code">+856</span></li><li data-code="+961" data-brief="LB"><span class="record-country">Lebanon</span><span class="record-code">+961</span></li><li data-code="+423" data-brief="LI"><span class="record-country">Liechtenstein</span><span class="record-code">+423</span></li><li data-code="+231" data-brief="LR"><span class="record-country">Liberia</span><span class="record-code">+231</span></li><li data-code="+266" data-brief="LS"><span class="record-country">Lesotho</span><span class="record-code">+266</span></li><li data-code="+370" data-brief="LT"><span class="record-country">Lithuania</span><span class="record-code">+370</span></li><li data-code="+352" data-brief="LU"><span class="record-country">Luxembourg</span><span class="record-code">+352</span></li><li data-code="+371" data-brief="LV"><span class="record-country">Latvia</span><span class="record-code">+371</span></li><li data-code="+218" data-brief="LY"><span class="record-country">Libya</span><span class="record-code">+218</span></li></ul></div><div class="container"><div class="head">M</div><ul><li data-code="+691" data-brief="FM"><span class="record-country">Micronesia</span><span class="record-code">+691</span></li><li data-code="+212" data-brief="MA"><span class="record-country">Morocco</span><span class="record-code">+212</span></li><li data-code="+377" data-brief="MC"><span class="record-country">Monaco</span><span class="record-code">+377</span></li><li data-code="+373" data-brief="MD"><span class="record-country">Moldova</span><span class="record-code">+373</span></li><li data-code="+382" data-brief="ME"><span class="record-country">Montenegro</span><span class="record-code">+382</span></li><li data-code="+261" data-brief="MG"><span class="record-country">Madagascar</span><span class="record-code">+261</span></li><li data-code="+692" data-brief="MH"><span class="record-country">Marshall Islands</span><span class="record-code">+692</span></li><li data-code="+389" data-brief="MK"><span class="record-country">Macedonia</span><span class="record-code">+389</span></li><li data-code="+223" data-brief="ML"><span class="record-country">Mali</span><span class="record-code">+223</span></li><li data-code="+95" data-brief="MM"><span class="record-country">Myanmar</span><span class="record-code">+95</span></li><li data-code="+976" data-brief="MN"><span class="record-country">Mongolia</span><span class="record-code">+976</span></li><li data-code="+853" data-brief="MO"><span class="record-country">Macao</span><span class="record-code">+853</span></li><li data-code="+596" data-brief="MQ"><span class="record-country">Martinique</span><span class="record-code">+596</span></li><li data-code="+222" data-brief="MR"><span class="record-country">Mauritania</span><span class="record-code">+222</span></li><li data-code="+1" data-brief="MS"><span class="record-country">Montserrat</span><span class="record-code">+1</span></li><li data-code="+356" data-brief="MT"><span class="record-country">Malta</span><span class="record-code">+356</span></li><li data-code="+230" data-brief="MU"><span class="record-country">Mauritius</span><span class="record-code">+230</span></li><li data-code="+960" data-brief="MV"><span class="record-country">Maldives</span><span class="record-code">+960</span></li><li data-code="+265" data-brief="MW"><span class="record-country">Malawi</span><span class="record-code">+265</span></li><li data-code="+52" data-brief="MX"><span class="record-country">Mexico</span><span class="record-code">+52</span></li><li data-code="+60" data-brief="MY"><span class="record-country">Malaysia</span><span class="record-code">+60</span></li><li data-code="+258" data-brief="MZ"><span class="record-country">Mozambique</span><span class="record-code">+258</span></li><li data-code="+262" data-brief="YT"><span class="record-country">Mayotte</span><span class="record-code">+262</span></li></ul></div><div class="container"><div class="head">N</div><ul><li data-code="+850" data-brief="KP"><span class="record-country">North Korea</span><span class="record-code">+850</span></li><li data-code="+1" data-brief="MP"><span class="record-country">Northern Mariana Islands</span><span class="record-code">+1</span></li><li data-code="+264" data-brief="NA"><span class="record-country">Namibia</span><span class="record-code">+264</span></li><li data-code="+687" data-brief="NC"><span class="record-country">New Caledonia</span><span class="record-code">+687</span></li><li data-code="+227" data-brief="NE"><span class="record-country">Niger</span><span class="record-code">+227</span></li><li data-code="+672" data-brief="NF"><span class="record-country">Norfolk Island</span><span class="record-code">+672</span></li><li data-code="+234" data-brief="NG"><span class="record-country">Nigeria</span><span class="record-code">+234</span></li><li data-code="+505" data-brief="NI"><span class="record-country">Nicaragua</span><span class="record-code">+505</span></li><li data-code="+31" data-brief="NL"><span class="record-country">Netherlands</span><span class="record-code">+31</span></li><li data-code="+47" data-brief="NO"><span class="record-country">Norway</span><span class="record-code">+47</span></li><li data-code="+977" data-brief="NP"><span class="record-country">Nepal</span><span class="record-code">+977</span></li><li data-code="+674" data-brief="NR"><span class="record-country">Nauru</span><span class="record-code">+674</span></li><li data-code="+683" data-brief="NU"><span class="record-country">Niue</span><span class="record-code">+683</span></li><li data-code="+64" data-brief="NZ"><span class="record-country">New Zealand</span><span class="record-code">+64</span></li></ul></div><div class="container"><div class="head">O</div><ul><li data-code="+968" data-brief="OM"><span class="record-country">Oman</span><span class="record-code">+968</span></li></ul></div><div class="container"><div class="head">P</div><ul><li data-code="+507" data-brief="PA"><span class="record-country">Panama</span><span class="record-code">+507</span></li><li data-code="+51" data-brief="PE"><span class="record-country">Peru</span><span class="record-code">+51</span></li><li data-code="+675" data-brief="PG"><span class="record-country">Papua New Guinea</span><span class="record-code">+675</span></li><li data-code="+63" data-brief="PH"><span class="record-country">Philippines</span><span class="record-code">+63</span></li><li data-code="+92" data-brief="PK"><span class="record-country">Pakistan</span><span class="record-code">+92</span></li><li data-code="+48" data-brief="PL"><span class="record-country">Poland</span><span class="record-code">+48</span></li><li data-code="+1" data-brief="PR"><span class="record-country">Puerto Rico</span><span class="record-code">+1</span></li><li data-code="+970" data-brief="PS"><span class="record-country">Palestine</span><span class="record-code">+970</span></li><li data-code="+351" data-brief="PT"><span class="record-country">Portugal</span><span class="record-code">+351</span></li><li data-code="+680" data-brief="PW"><span class="record-country">Palau</span><span class="record-code">+680</span></li><li data-code="+595" data-brief="PY"><span class="record-country">Paraguay</span><span class="record-code">+595</span></li></ul></div><div class="container"><div class="head">Q</div><ul><li data-code="+974" data-brief="QA"><span class="record-country">Qatar</span><span class="record-code">+974</span></li></ul></div><div class="container"><div class="head">R</div><ul><li data-code="+262" data-brief="RE"><span class="record-country">Reunion</span><span class="record-code">+262</span></li><li data-code="+40" data-brief="RO"><span class="record-country">Romania</span><span class="record-code">+40</span></li><li data-code="+7" data-brief="RU"><span class="record-country">Russia</span><span class="record-code">+7</span></li><li data-code="+250" data-brief="RW"><span class="record-country">Rwanda</span><span class="record-code">+250</span></li></ul></div><div class="container"><div class="head">S</div><ul><li data-code="+590" data-brief="BL"><span class="record-country">Saint Barthélemy</span><span class="record-code">+590</span></li><li data-code="+41" data-brief="CH"><span class="record-country">Switzerland</span><span class="record-code">+41</span></li><li data-code="+34" data-brief="ES"><span class="record-country">Spain</span><span class="record-code">+34</span></li><li data-code="+1" data-brief="KN"><span class="record-country">Saint Kitts And Nevis</span><span class="record-code">+1</span></li><li data-code="+82" data-brief="KR"><span class="record-country">South Korea</span><span class="record-code">+82</span></li><li data-code="+1" data-brief="LC"><span class="record-country">Saint Lucia</span><span class="record-code">+1</span></li><li data-code="+94" data-brief="LK"><span class="record-country">Sri Lanka</span><span class="record-code">+94</span></li><li data-code="+590" data-brief="MF"><span class="record-country">Saint Martin</span><span class="record-code">+590</span></li><li data-code="+508" data-brief="PM"><span class="record-country">Saint Pierre And Miquelon</span><span class="record-code">+508</span></li><li data-code="+381" data-brief="RS"><span class="record-country">Serbia</span><span class="record-code">+381</span></li><li data-code="+966" data-brief="SA"><span class="record-country">Saudi Arabia</span><span class="record-code">+966</span></li><li data-code="+677" data-brief="SB"><span class="record-country">Solomon Islands</span><span class="record-code">+677</span></li><li data-code="+248" data-brief="SC"><span class="record-country">Seychelles</span><span class="record-code">+248</span></li><li data-code="+249" data-brief="SD"><span class="record-country">Sudan</span><span class="record-code">+249</span></li><li data-code="+46" data-brief="SE"><span class="record-country">Sweden</span><span class="record-code">+46</span></li><li data-code="+65" data-brief="SG"><span class="record-country">Singapore</span><span class="record-code">+65</span></li><li data-code="+290" data-brief="SH"><span class="record-country">Saint Helena</span><span class="record-code">+290</span></li><li data-code="+386" data-brief="SI"><span class="record-country">Slovenia</span><span class="record-code">+386</span></li><li data-code="+47" data-brief="SJ"><span class="record-country">Svalbard And Jan Mayen</span><span class="record-code">+47</span></li><li data-code="+421" data-brief="SK"><span class="record-country">Slovakia</span><span class="record-code">+421</span></li><li data-code="+232" data-brief="SL"><span class="record-country">Sierra Leone</span><span class="record-code">+232</span></li><li data-code="+378" data-brief="SM"><span class="record-country">San Marino</span><span class="record-code">+378</span></li><li data-code="+221" data-brief="SN"><span class="record-country">Senegal</span><span class="record-code">+221</span></li><li data-code="+252" data-brief="SO"><span class="record-country">Somalia</span><span class="record-code">+252</span></li><li data-code="+597" data-brief="SR"><span class="record-country">Suriname</span><span class="record-code">+597</span></li><li data-code="+239" data-brief="ST"><span class="record-country">Sao Tome And Principe</span><span class="record-code">+239</span></li><li data-code="+1" data-brief="SX"><span class="record-country">Sint Maarten (Dutch part)</span><span class="record-code">+1</span></li><li data-code="+963" data-brief="SY"><span class="record-country">Syria</span><span class="record-code">+963</span></li><li data-code="+268" data-brief="SZ"><span class="record-country">Swaziland</span><span class="record-code">+268</span></li><li data-code="+1" data-brief="VC"><span class="record-country">Saint Vincent And The Grenadines</span><span class="record-code">+1</span></li><li data-code="+685" data-brief="WS"><span class="record-country">Samoa</span><span class="record-code">+685</span></li><li data-code="+27" data-brief="ZA"><span class="record-country">South Africa</span><span class="record-code">+27</span></li></ul></div><div class="container"><div class="head">T</div><ul><li data-code="+243" data-brief="CD"><span class="record-country">The Democratic Republic Of Congo</span><span class="record-code">+243</span></li><li data-code="+1" data-brief="TC"><span class="record-country">Turks And Caicos Islands</span><span class="record-code">+1</span></li><li data-code="+228" data-brief="TG"><span class="record-country">Togo</span><span class="record-code">+228</span></li><li data-code="+66" data-brief="TH"><span class="record-country">Thailand</span><span class="record-code">+66</span></li><li data-code="+992" data-brief="TJ"><span class="record-country">Tajikistan</span><span class="record-code">+992</span></li><li data-code="+690" data-brief="TK"><span class="record-country">Tokelau</span><span class="record-code">+690</span></li><li data-code="+670" data-brief="TL"><span class="record-country">Timor-Leste</span><span class="record-code">+670</span></li><li data-code="+993" data-brief="TM"><span class="record-country">Turkmenistan</span><span class="record-code">+993</span></li><li data-code="+216" data-brief="TN"><span class="record-country">Tunisia</span><span class="record-code">+216</span></li><li data-code="+676" data-brief="TO"><span class="record-country">Tonga</span><span class="record-code">+676</span></li><li data-code="+90" data-brief="TR"><span class="record-country">Turkey</span><span class="record-code">+90</span></li><li data-code="+1" data-brief="TT"><span class="record-country">Trinidad and Tobago</span><span class="record-code">+1</span></li><li data-code="+688" data-brief="TV"><span class="record-country">Tuvalu</span><span class="record-code">+688</span></li><li data-code="+886" data-brief="TW"><span class="record-country">Taiwan</span><span class="record-code">+886</span></li><li data-code="+255" data-brief="TZ"><span class="record-country">Tanzania</span><span class="record-code">+255</span></li></ul></div><div class="container"><div class="head">U</div><ul><li data-code="+971" data-brief="AE"><span class="record-country">United Arab Emirates</span><span class="record-code">+971</span></li><li data-code="+44" data-brief="GB"><span class="record-country">United Kingdom</span><span class="record-code">+44</span></li><li data-code="+380" data-brief="UA"><span class="record-country">Ukraine</span><span class="record-code">+380</span></li><li data-code="+256" data-brief="UG"><span class="record-country">Uganda</span><span class="record-code">+256</span></li><li data-code="+1" data-brief="US"><span class="record-country">United States</span><span class="record-code">+1</span></li><li data-code="+598" data-brief="UY"><span class="record-country">Uruguay</span><span class="record-code">+598</span></li><li data-code="+998" data-brief="UZ"><span class="record-country">Uzbekistan</span><span class="record-code">+998</span></li><li data-code="+1" data-brief="VI"><span class="record-country">U.S. Virgin Islands</span><span class="record-code">+1</span></li></ul></div><div class="container"><div class="head">V</div><ul><li data-code="+379" data-brief="VA"><span class="record-country">Vatican</span><span class="record-code">+379</span></li><li data-code="+58" data-brief="VE"><span class="record-country">Venezuela</span><span class="record-code">+58</span></li><li data-code="+84" data-brief="VN"><span class="record-country">Vietnam</span><span class="record-code">+84</span></li><li data-code="+678" data-brief="VU"><span class="record-country">Vanuatu</span><span class="record-code">+678</span></li></ul></div><div class="container"><div class="head">W</div><ul><li data-code="+212" data-brief="EH"><span class="record-country">Western Sahara</span><span class="record-code">+212</span></li><li data-code="+681" data-brief="WF"><span class="record-country">Wallis And Futuna</span><span class="record-code">+681</span></li></ul></div><div class="container"><div class="head">Y</div><ul><li data-code="+967" data-brief="YE"><span class="record-country">Yemen</span><span class="record-code">+967</span></li></ul></div><div class="container"><div class="head">Z</div><ul><li data-code="+260" data-brief="ZM"><span class="record-country">Zambia</span><span class="record-code">+260</span></li><li data-code="+263" data-brief="ZW"><span class="record-country">Zimbabwe</span><span class="record-code">+263</span></li></ul></div></div></div>
+	                            </div>
+							</div>
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">验证码</label>
+								</div>
+								<div class="normalInput bottom">
+									<input name="kapkey" id="kapkey" class="kapkey" maxlength="6" autocomplete="off" type="text">
+									<span class="form-line"></span>
+									<a id="getKey-bindTel" data-value="6" href="javascript:void(0);" data-type="1" class="linkABlue invalidBtn get_kapkey">获取验证码</a>
+									<a href="javascript:void(0);" class="linkABlue kapkey_requested" style="display:none;">已发送 <span class="interval_num">60</span></a>
+								</div>
+							</div>
+							<div class="lineWrap">
+								<label class="fleft">&nbsp;</label>
+								<a class="fullBtnBlue save_form fleft" id="ce-u-bindTelsave">保存</a>
+								<a class="fullBtnGray cancel_form fleft" id="ce-u-bindTelcancel">取消</a>
+								<div class="clear"></div>
+							</div>
+						</form>
+					</div>
+					<!-- 修改手机 验证密码 -->
+					<div id="updateTel-step1" class="grayBorderT grayBorderB modify_content" style="display:none;">
+						<div class="setQuestion-titleWrap">
+							<span>绑定手机号（验证密码）</span>
+						</div>
+						<form class="setQuestion-bodyWrap" novalidate="novalidate">
+								<div class="lineWrap">
+									<div class="leftWrap">
+										<label class="leftLabel">账号密码</label>
+									</div>
+									<input value="" name="password" id="ce-u-passwordNew-updateTel" class="normalInput" maxlength="16" type="password">
+								</div>
+								<div class="lineWrap">
+									<label class="fleft">&nbsp;</label>
+									<a class="fullBtnBlue save_form fleft" id="updateTel-step1-setTelCheckPassSave">下一步</a>
+									<a class="fullBtnGray cancel_form fleft" id="updateTel-step1-setTelCheckPassCancel">取消</a>
+									<div class="clear"></div>
+								</div>
+									<div class="clear"></div>
+						</form>
+					</div>
+					<div id="setTelCheckPass" class="grayBorderT grayBorderB modify_content" style="display:none;">
+						
+							<div id="changePhoneValidPhone" class="change_valid_wrap">
+								<div class="setQuestion-titleWrap">
+									<span>修改手机号（验证原手机）</span>
+									
+								</div>
+								<form id="formPhoneValidPhone" class="setQuestion-bodyWrap" novalidate="novalidate">
+										<div class="lineWrap">
+											<div class="leftWrap">
+												<label class="leftLabel">原手机号</label>
+											</div>
+											<input data-key="kapkey" name="bindPhone" id="ce-u-cTelOld" class="normalInput" maxlength="11" type="text">
+										</div>
+										<div class="lineWrap">
+											<div class="leftWrap">
+												<label class="leftLabel">验证码</label>
+											</div>
+											<div class="normalInput bottom">
+												<input name="kapkeyPhone" id="kapkeyTelOld" class="kapkey" maxlength="6" autocomplete="off" type="text">
+												<span class="form-line"></span>
+												<a id="getKey-activeTelOld" data-value="23" data-action="bindPhone" href="javascript:void(0);" data-type="1" class="linkABlue invalidBtn get_kapkey">获取验证码</a>
+												<a href="javascript:void(0);" class="linkABlue kapkey_requested" style="display:none;">已发送 <span class="interval_num">60</span></a>
+											</div>
+											<div clear="clear"></div>
+										</div>
+										<div class="lineWrap">
+											<label class="fleft">&nbsp;</label>
+											<a class="fullBtnBlue save_form fleft" id="setTelCheckPassSave">下一步</a>
+											<a class="fullBtnGray cancel_form fleft" id="setTelCheckPassCancel">取消</a>
+											<div class="clear"></div>
+										</div>
+											<div class="clear"></div>
+								</form>
+							</div>
+						
+						
+					</div>
+					<div id="changeTelWrap-activeNew" class="grayBorderT grayBorderB modify_content" style="display:none;">
+						<div class="cTel-titleWrap">
+							<span>输入新手机号</span>
+						</div>
+						<form class="cEmail-bodyWrap" novalidate="novalidate">
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">新手机号码</label>
+								</div>
+								<input data-key="kapkey" name="phone" id="ce-u-cTelNew" class="normalInput" maxlength="11" type="text">
+							</div>
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">验证码</label>
+								</div>
+								<div class="normalInput bottom">
+									<input name="kapkey" id="kapkeyTelNew" class="kapkey" maxlength="6" autocomplete="off" type="text">
+									<span class="form-line"></span>
+									<a id="getKey-activeTelNew" data-value="14" href="javascript:void(0);" data-type="1" class="linkABlue invalidBtn get_kapkey">获取验证码</a>
+									<a href="javascript:void(0);" class="linkABlue kapkey_requested" style="display:none;">已发送 <span class="interval_num">60</span></a>
+								</div>
+								<div clear="clear"></div>
+							</div>
+							<div class="lineWrap">
+								<label class="fleft">&nbsp;</label>
+								<a class="fullBtnBlue save_form fleft" id="ce-u-telsaveNew">保存</a>
+								<a class="fullBtnGray cancel_form fleft" id="ce-u-telcancelNew">取消</a>
+								<div class="clear"></div>
+							</div>
+						</form>
+					</div>
+					<div id="questionWrap" class="lineWrap">
+						<div class="item-left">密保问题</div>
+						
+						
+							<div id="questionSetTip" class="item-right">
+								<a id="setSafe" href="javascript:void(0);" class="linkABlue modify">设置</a>
+							</div>
+							<div id="questionUnSettedTip" class="item-middle">
+								<span id="tip" class="bold">未设置</span><br> <span class="grayTip">设置密保可大幅提升账号安全</span>
+							</div>
+						
+						<div class="clear"></div>
+					</div>
+					<!-- 设置密保 -->
+					<div id="setQuestion-stepOne" class="grayBorderT grayBorderB modify_content" style="display:none;">
+						<div class="setQuestion-titleWrap">
+							<span>设置密保（验证密码）</span>
+						</div>
+						<form class="setQuestion-bodyWrap" novalidate="novalidate">
+								<div class="lineWrap">
+									<div class="leftWrap">
+										<label class="leftLabel">账号密码</label>
+									</div>
+									<input value="" name="password" id="setQuestion_pwd" class="normalInput" maxlength="16" type="password">
+								</div>
+
+								<div class="lineWrap">
+									<label class="fleft">&nbsp;</label>
+									<a class="fullBtnBlue save_form fleft" id="setQuestionSave">下一步</a>
+									<a class="fullBtnGray cancel_form fleft" id="setQuestionCancel">取消</a>
+									<div class="clear"></div>
+								</div>
+									<div class="clear"></div>
+						</form>
+					</div>
+					<div id="setQuestion-stepTwo" class="grayBorderT grayBorderB modify_content" style="display:none;">
+						<div class="setQuestion-titleWrap">
+							<span>设置密保</span>
+						</div>
+						<form class="setQuestion-bodyWrap" novalidate="novalidate">
+								<div class="lineWrap">
+									<div class="leftWrap">
+										<label class="leftLabel">问题一：</label>
+									</div>
+                                    <button type="button" class="dropdown" data-name="questionCode1" id="questionCode1" style="position: relative;"><span>请选择密保问题</span><i class="dropdown_arrow" style="top:24px; right:10px"></i><input name="questionCode1" type="hidden"></button>
+								</div>
+								<div class="lineWrap">
+									<div class="leftWrap">
+										<label class="leftLabel">答案：</label>
+									</div>
+									<input maxlength="32" name="answer1" id="qanswer1" class="normalInput" type="text">
+								</div>
+								<div class="lineWrap">
+									<div class="leftWrap">
+										<label class="leftLabel">问题二：</label>
+									</div>
+                                    <button type="button" class="dropdown" data-name="questionCode2" id="questionCode2" style="position: relative;"><span>请选择密保问题</span><i class="dropdown_arrow" style="top:24px; right:10px"></i><input name="questionCode2" type="hidden"></button>
+
+								</div>
+								<div class="lineWrap">
+									<div class="leftWrap">
+										<label class="leftLabel">答案：</label>
+									</div>
+									<input maxlength="32" name="answer2" id="qanswer2" class="normalInput" type="text">
+								</div>
+								<div class="lineWrap">
+									<label class="fleft">&nbsp;</label>
+									<a class="fullBtnBlue save_form fleft" id="ce-u-setQuetionsave">保存</a>
+									<a class="fullBtnGray cancel_form fleft" id="ce-u-setQuetioncancel">取消</a>
+									<div class="clear"></div>
+								</div>
+						</form>
+					</div>
+					<!-- 修改密保 -->
+					<div id="changeQuestionWrap" class="grayBorderT grayBorderB modify_content" style="display:none;">
+						<div class="cQuestion-titleWrap">
+							<span>修改密保(验证)</span>
+						</div>
+						<form class="cQuestion-bodyWrap" novalidate="novalidate">
+							<div class="questionlineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">问题一：</label>
+								</div>
+								<span id="cqone" class="normalInput current_email"></span>
+								<input name="questionCode1" value="" type="hidden">
+							</div>
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">答案：</label>
+								</div>
+								<input maxlength="32" name="answer1" id="answer1" class="normalInput" type="text">
+							</div>
+							<div class="questionlineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">问题二：</label>
+								</div>
+								<span id="cqtwo" class="normalInput current_email"></span>
+								<input name="questionCode2" value="" type="hidden">
+							</div>
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">答案：</label>
+								</div>
+								<input maxlength="32" name="answer2" id="answer2" class="normalInput" type="text">
+							</div>
+							<div class="lineWrap">
+								<label class="fleft">&nbsp;</label>
+								<a class="fullBtnBlue save_form fleft" id="ce-u-cquestionsave">下一步</a>
+								<a class="fullBtnGray cancel_form fleft" id="ce-u-cquestioncansel">取消</a>
+								<div class="clear"></div>
+							</div>
+						</form>
+					</div>
+					<div id="resetQuestion" class="grayBorderT grayBorderB modify_content" style="display:none;">
+						<div class="cQuestion-titleWrap">
+							<span>修改密保(设置新的密保问答)</span>
+						</div>
+						<form class="cQuestion-bodyWrap" novalidate="novalidate">
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">问题一:</label>
+								</div>
+                                <button type="button" class="dropdown" data-name="questionCode1" id="questionCode3" style="position: relative;"><span>请选择密保问题</span><i class="dropdown_arrow" style="top:24px; right:10px"></i><input name="questionCode1" type="hidden"></button>
+							</div>
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">答案：</label>
+								</div>
+								<input maxlength="32" name="answer1" id="resetanswer1" class="normalInput" type="text">
+							</div>
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">问题二:</label>
+								</div>
+                                <button type="button" class="dropdown" data-name="questionCode2" id="questionCode4" style="position: relative;"><span>请选择密保问题</span><i class="dropdown_arrow" style="top:24px; right:10px"></i><input name="questionCode2" type="hidden"></button>
+							</div>
+							<div class="lineWrap">
+								<div class="leftWrap">
+									<label class="leftLabel">答案：</label>
+								</div>
+								<input maxlength="32" name="answer2" id="resetanswer2" class="normalInput" type="text">
+							</div>
+							<div class="lineWrap">
+								<label class="fleft">&nbsp;</label>
+								<a class="fullBtnBlue save_form fleft" id="ce-u-resetQuetionsave">保存</a>
+								<a class="fullBtnGray cancel_form fleft" id="ce-u-resetQuetioncancel">取消</a>
+							    <div class="clear"></div>
+							</div>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<!-- <form id="mainForm" enctype="application/x-www-form-urlencoded">
+				<input type="text" value="" name="username" id="username" class='normalInput' maxlength='32' placeholder='手机号/魅族账号'/>
+				<input type="password" value="" name="password" id="password" class='normalInput' maxlength='16' placeholder='密码'/>
+				<div class='rememberField'>
+					<span><input name="remember" id="remember" type="checkbox" value="1"/></span>
+					<label for="remember" tabindex="0">记住登录状态</label>
+					<a id="forgetpwd" href="forgetpwd.jsp" class='linkABlue'>忘记密码?</a>
+				</div>
+				<a id="login" class='fullBtnBlue'>登录</a>
+				<div class='transferField'>
+					<a name="btnArea" id="transfer" href="bbsUserToFlyme.jsp" class='linkAGray'>社区账号转换为魅族账号</a>
+				</div>
+			</form> -->
+		</div>
+	</div>
+	<input name="form_resubmit_token_key" id="form_resubmit_token_key" value="9EE9R027EFNJWTXGJXKY3TP98JIA7L7A" type="hidden">
+	<ul style="display:none;" id="mail" class="bRadius2 boxShadow10"><li data-mail="@qq.com" class="item">@qq.com</li><li data-mail="@sina.com" class="item">@sina.com</li><li data-mail="@126.com" class="item">@126.com</li><li data-mail="@163.com" class="item">@163.com</li><li data-mail="@gmail.com" class="item">@gmail.com</li></ul>
+	
+
+
+
+
+<div id="flymeFooter" class="footerWrap" style="top: 717px;">
+	<div class="footerInner">
+		<div class="footer-layer1">
+			<div class="footer-innerLink">
+				<a href="http://www.meizu.com/about.html" target="_blank" title="关于魅族">关于魅族</a>
+				<img class="foot-line" src="person_files/space.gif">
+				<a href="http://hr.meizu.com/" target="_blank" title="工作机会">工作机会</a>
+				<img class="foot-line" src="person_files/space.gif">
+				<a href="http://www.meizu.com/contact.html" target="_blank" title="联系我们">联系我们</a>
+				<img class="foot-line" src="person_files/space.gif">
+				<a href="http://www.meizu.com/legalStatement.html" target="_blank" title="法律声明">法律声明</a>
+				<img class="foot-line" src="person_files/space.gif">
+				
+				<div href="javascript:void(0);" id="globalName" class="footer-language" title="简体中文">
+					简体中文&nbsp;&nbsp;&nbsp;
+					<div id="globalContainer" class="footer-language_menu" style="left: 469px;">
+						<a href="https://i.flyme.cn/uc/webjsp/member/detail?lang=en_US" id="i18n-link" title="English" class="ClobalItem">English</a>
+						<script>
+							;(function() {
+								var u = decodeURIComponent(location.href)
+								var r = /lang=([^&\s]+)/
+								var lowB = !('addEventListener' in window)
+								var addEvent = lowB ? window.attachEvent : window.addEventListener
+
+								if(r.test(u)) u = u.replace(r, 'lang=en_US')
+								else u += (~u.indexOf('?') ? '&' : '?') + 'lang=en_US'
+
+								addEvent(lowB ? 'onload' : 'load', function() {document.getElementById('i18n-link').setAttribute('href',u)})
+							}());
+						</script>
+					</div>
+				</div>
+			</div>
+			<div class="footer-service">
+				<span class="service-label">客服热线</span>
+				<span class="service-num">400-788-3333</span>
+				<a id="service-online" class="service-online" href="javascript:void(0);" title="在线客服">在线客服</a>
+			</div>
+			<div class="footer-outerLink">
+				<a class="footer-sinaMblog" href="http://weibo.com/meizumobile" target="_blank"><i class="i_icon"></i></a>
+				
+				<a id="footer-weChat" class="footer-weChat" href="javascript:void(0);" target="_blank"><i class="i_icon"></i></a>
+				<a class="footer-qzone" href="http://user.qzone.qq.com/2762957059" target="_blank"><i class="i_icon"></i></a>
+			</div>
+		</div>
+		<div class="clear"></div>
+		<div id="flymeCopyright" class="copyrightWrap">
+			<div class="copyrightInner">
+				<span>©2017 Meizu Telecom Equipment Co., Ltd. All rights reserved.</span>
+				<a href="http://www.miitbeian.gov.cn/" class="linkAGray" target="_blank">备案号: 粤ICP备13003602号-4</a>
+				<a href="http://www3.res.meizu.com/static/cn/widget/footer/images/icp2_b2dcb54.jpg" class="linkAGray" target="_blank">经营许可证编号: 粤B2-20130198</a>
+				<a target="_blank" href="http://www2.res.meizu.com/zh_cn/images/common/com_licence.jpg" hidefocus="true" class="linkAGray">营业执照</a>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="wechatPic"></div>
+<script type="text/javascript">
+(function() {
+    var ga = document.createElement('script'), s;
+    ga.type = 'text/javascript';
+    ga.src = ('https:' == document.location.protocol ? 'https://tongji-res.meizu.com' : 'http://tongji-res1.meizu.com') + '/resources/tongji/flow.js';
+    s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+	<script charset="utf-8" type="text/javascript" src="person_files/jquery-1.js"></script>
+	<script charset="utf-8" type="text/javascript" src="person_files/M20130902.js"></script>
+	<script type="text/javascript" src="person_files/jquery.js" charset="utf-8"></script>
+	<script type="text/javascript" src="person_files/jquery_002.js" charset="utf-8"></script>
+	<script type="text/javascript" src="person_files/utils.js" charset="utf-8"></script>
+	<script type="text/javascript" src="person_files/flyme.js" charset="utf-8"></script>
+	<script type="text/javascript" src="person_files/base.js" charset="utf-8"></script>
+	<script type="text/javascript" src="person_files/jquery_003.js" charset="utf-8"></script>
+	<script type="text/javascript" src="person_files/dropdown.js" charset="utf-8"></script>
+	<script src="person_files/cycode.js"></script>
+	<script type="text/javascript" src="person_files/actmanage.js" charset="utf-8"></script>
+    <ul class="dropdown_menu" data-target="#questionCode1" style="display: none; position: absolute; z-index: 999;">
+    
+    <li data-text="您的出生地是？" data-value="1">您的出生地是？</li>
+    
+    <li data-text="您母亲的姓名是？" data-value="2">您母亲的姓名是？</li>
+    
+    <li data-text="您父亲的姓名是？" data-value="3">您父亲的姓名是？</li>
+    
+    <li data-text="您配偶的姓名是？" data-value="4">您配偶的姓名是？</li>
+    
+    <li data-text="您的小学校名是？" data-value="5">您的小学校名是？</li>
+    
+    <li data-text="您母亲的生日是？" data-value="6">您母亲的生日是？</li>
+    
+    <li data-text="您父亲的生日是？" data-value="7">您父亲的生日是？</li>
+    
+    <li data-text="您配偶的生日是？" data-value="8">您配偶的生日是？</li>
+    
+    <li data-text="您初中班主任的名字是？" data-value="9">您初中班主任的名字是？</li>
+    
+    <li data-text="您小时候的绰号是什么？" data-value="10">您小时候的绰号是什么？</li>
+    
+    <li data-text="您小时候最好的朋友是？" data-value="11">您小时候最好的朋友是？</li>
+    
+    </ul>
+    <ul class="dropdown_menu" data-target="#questionCode2" style="display: none; position: absolute; z-index: 999;">
+    
+    <li data-text="您的出生地是？" data-value="1">您的出生地是？</li>
+    
+    <li data-text="您母亲的姓名是？" data-value="2">您母亲的姓名是？</li>
+    
+    <li data-text="您父亲的姓名是？" data-value="3">您父亲的姓名是？</li>
+    
+    <li data-text="您配偶的姓名是？" data-value="4">您配偶的姓名是？</li>
+    
+    <li data-text="您的小学校名是？" data-value="5">您的小学校名是？</li>
+    
+    <li data-text="您母亲的生日是？" data-value="6">您母亲的生日是？</li>
+    
+    <li data-text="您父亲的生日是？" data-value="7">您父亲的生日是？</li>
+    
+    <li data-text="您配偶的生日是？" data-value="8">您配偶的生日是？</li>
+    
+    <li data-text="您初中班主任的名字是？" data-value="9">您初中班主任的名字是？</li>
+    
+    <li data-text="您小时候的绰号是什么？" data-value="10">您小时候的绰号是什么？</li>
+    
+    <li data-text="您小时候最好的朋友是？" data-value="11">您小时候最好的朋友是？</li>
+    
+    </ul>
+    <ul class="dropdown_menu" data-target="#questionCode3" style="display: none; position: absolute; z-index: 999;">
+    
+    <li data-text="您的出生地是？" data-value="1">您的出生地是？</li>
+    
+    <li data-text="您母亲的姓名是？" data-value="2">您母亲的姓名是？</li>
+    
+    <li data-text="您父亲的姓名是？" data-value="3">您父亲的姓名是？</li>
+    
+    <li data-text="您配偶的姓名是？" data-value="4">您配偶的姓名是？</li>
+    
+    <li data-text="您的小学校名是？" data-value="5">您的小学校名是？</li>
+    
+    <li data-text="您母亲的生日是？" data-value="6">您母亲的生日是？</li>
+    
+    <li data-text="您父亲的生日是？" data-value="7">您父亲的生日是？</li>
+    
+    <li data-text="您配偶的生日是？" data-value="8">您配偶的生日是？</li>
+    
+    <li data-text="您初中班主任的名字是？" data-value="9">您初中班主任的名字是？</li>
+    
+    <li data-text="您小时候的绰号是什么？" data-value="10">您小时候的绰号是什么？</li>
+    
+    <li data-text="您小时候最好的朋友是？" data-value="11">您小时候最好的朋友是？</li>
+    
+    </ul>
+    <ul class="dropdown_menu" data-target="#questionCode4" style="display: none; position: absolute; z-index: 999;">
+    
+    <li data-text="您的出生地是？" data-value="1">您的出生地是？</li>
+    
+    <li data-text="您母亲的姓名是？" data-value="2">您母亲的姓名是？</li>
+    
+    <li data-text="您父亲的姓名是？" data-value="3">您父亲的姓名是？</li>
+    
+    <li data-text="您配偶的姓名是？" data-value="4">您配偶的姓名是？</li>
+    
+    <li data-text="您的小学校名是？" data-value="5">您的小学校名是？</li>
+    
+    <li data-text="您母亲的生日是？" data-value="6">您母亲的生日是？</li>
+    
+    <li data-text="您父亲的生日是？" data-value="7">您父亲的生日是？</li>
+    
+    <li data-text="您配偶的生日是？" data-value="8">您配偶的生日是？</li>
+    
+    <li data-text="您初中班主任的名字是？" data-value="9">您初中班主任的名字是？</li>
+    
+    <li data-text="您小时候的绰号是什么？" data-value="10">您小时候的绰号是什么？</li>
+    
+    <li data-text="您小时候最好的朋友是？" data-value="11">您小时候最好的朋友是？</li>
+    
+    </ul>
+    
+
+</body></html>

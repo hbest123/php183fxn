@@ -21,6 +21,8 @@ class UsersTableSeeder extends Seeder
         			'password'=>encrypt('aaa'),
         			'email'=>str_random(5).'@sina.com',
         			'remember_token'=>str_random(30),
+                    'auth'=>1,
+                    'status'=>1,
         			'created_at'=>date('Y-m-d H:i:s'),
         			'updated_at'=>date('Y-m-d H:i:s'),
 
@@ -29,6 +31,6 @@ class UsersTableSeeder extends Seeder
 
         	
         }
-        \DB::table('users')->insert($data);
+        \DB::table('user')->insert($data);
     }
 }

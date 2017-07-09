@@ -266,49 +266,11 @@
               </li>
             </ul>
           </li>
-          <!-- User Account: style can be found in dropdown.less -->
-          <li class="dropdown user user-menu">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-              <img src="{{asset('/admin/adminlte/dist/img/user2-160x160.jpg')}}" class="user-image" alt="User Image">
-              <span class="hidden-xs">Alexander Pierce</span>
-            </a>
-            <ul class="dropdown-menu">
-              <!-- User image -->
-              <li class="user-header">
-                <img src="{{asset('/admin/adminlte/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
 
-                <p>
-                  Alexander Pierce - Web Developer
-                  <small>Member since Nov. 2012</small>
-                </p>
-              </li>
-              <!-- Menu Body -->
-              <li class="user-body">
-                <div class="row">
-                  <div class="col-xs-4 text-center">
-                    <a href="#">Followers</a>
-                  </div>
-                  <div class="col-xs-4 text-center">
-                    <a href="#">Sales</a>
-                  </div>
-                  <div class="col-xs-4 text-center">
-                    <a href="#">Friends</a>
-                  </div>
+          <div class="pull-right">
+                  <a href="{{ url('/admin/logout') }}" class="btn btn-default btn-flat">退出登录</a>
                 </div>
-                <!-- /.row -->
-              </li>
-              <!-- Menu Footer-->
-              <li class="user-footer">
-                <div class="pull-left">
-                  <a href="#" class="btn btn-default btn-flat">Profile</a>
-                </div>
-                <div class="pull-right">
-                  <a href="#" class="btn btn-default btn-flat">Sign out</a>
-                </div>
-              </li>
-            </ul>
-          </li>
-          <!-- Control Sidebar Toggle Button -->
+          
           <li>
             <a href="#" data-toggle="control-sidebar"><i class="fa fa-gears"></i></a>
           </li>
@@ -325,10 +287,10 @@
       <!-- Sidebar user panel -->
       <div class="user-panel">
         <div class="pull-left image">
-          <img src="{{asset('/admin/adminlte/dist/img/user2-160x160.jpg')}}" class="img-circle" alt="User Image">
+          <img src="/uploads/avatar/{{ session('master')->avatar}}" class="img-circle" alt="User Image">
         </div>
         <div class="pull-left info">
-          <p>Alexander Pierce</p>
+          <p>{{ session('master')->name}}</p>
           <a href="#"><i class="fa fa-circle text-success"></i> Online</a>
         </div>
       </div>
@@ -348,14 +310,27 @@
         <li class="header">MAIN NAVIGATION</li>
         <li class="active treeview">
           <a href="#">
+            <i class="fa fa-dashboard"></i> <span>管理员管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="{{url('/admin/admins/add')}}"><i class="fa fa-circle-o"></i> 管理员添加</a></li>
+            <li><a href="{{url('/admin/admins/index')}}"><i class="fa fa-circle-o"></i> 管理员列表</a></li>
+          </ul>
+        </li>
+
+        <li class="active treeview">
+          <a href="#">
             <i class="fa fa-dashboard"></i> <span>用户管理</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li class="active"><a href="{{url('/admin/user/add')}}"><i class="fa fa-circle-o"></i> 用户添加</a></li>
-            <li><a href="{{url('/admin/user/index')}}"><i class="fa fa-circle-o"></i> 用户列表</a></li>
+            <li class="active"><a href="{{url('/admin/user/create')}}"><i class="fa fa-circle-o"></i> 用户添加</a></li>
+            <li><a href="{{url('/admin/user')}}"><i class="fa fa-circle-o"></i> 用户列表</a></li>
           </ul>
         </li>
 
@@ -802,7 +777,7 @@
 
 $("#dele").click(function(){
 
- var url = "/admin/user/delete/"+id;
+ var url = "/admin/admins/delete/"+id;
  location.href=url;
 
     

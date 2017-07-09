@@ -1,4 +1,4 @@
-@extends('admin.layout');
+@extends('admin.layout')
 
 @section('content')
 
@@ -8,7 +8,13 @@
     <section class="content-header">
       <h1>
         Dashboard
-        <small>Control panel</small>
+        <small>
+        @if(session('info'))
+        <div class="alert alert-danger">
+        {{ session('info') }}
+        </div>
+        @endif
+        </small>
       </h1>
       <ol class="breadcrumb">
         <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
