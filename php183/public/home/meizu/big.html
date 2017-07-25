@@ -1,0 +1,132 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>jQuery响应式图片放大预览 - 站长素材</title>
+
+<link type="text/css" rel="stylesheet" href="css/demo.css">
+
+<!-- 必要样式 -->
+<link type="text/css" rel="stylesheet" href="css/etalage.css">
+
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.etalage.min.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function($){
+
+	$('#etalage').etalage({
+		thumb_image_width: 300,
+		thumb_image_height: 400,
+		source_image_width: 900,
+		source_image_height: 1200,
+		show_hint: true,
+		click_callback: function(image_anchor, instance_id){
+			alert('回调函数:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+		}
+	});
+
+	$('#example2').etalage({
+		thumb_image_width: 312,
+		thumb_image_height: 234,
+		source_image_width: 900,
+		source_image_height: 675,
+		zoom_area_height: 500,
+		magnifier_invert: false,
+		hide_cursor: true,
+		icon_offset: 15,
+		speed: 400
+	});
+
+	$('#example3').etalage({
+		thumb_image_width: 250,
+		thumb_image_height: 250,
+		source_image_width: 900,
+		source_image_height: 900,
+		zoom_area_width: 500,
+		zoom_area_height: 500,
+		zoom_area_distance: 5,
+		small_thumbs: 4,
+		smallthumb_inactive_opacity: 0.3,
+		smallthumbs_position: 'left',
+		show_icon: false,
+		autoplay: false,
+		keyboard: false,
+		zoom_easing: false
+	});
+
+});
+</script>
+</head>
+<body>
+
+
+	<div id="examples">
+	
+		<ul id="etalage">
+			<li>
+				<img class="etalage_thumb_image" src="images/image1_thumb.jpg" />
+				<img class="etalage_source_image" src="images/image1_large.jpg" title="This is an optional description." />
+			</li>
+			<li>
+				<img class="etalage_thumb_image" src="images/image2_thumb.jpg" />
+				<img class="etalage_source_image" src="images/image2_large.jpg" title="This text area can also be setup to appear at the top of the image.<br>This second line shows that the description can be longer." />
+			</li>
+			<li>
+				<img class="etalage_thumb_image" src="images/image3_thumb.jpg" />
+				<img class="etalage_source_image" src="images/image3_large.jpg" />
+			</li>
+			<li>
+				<img class="etalage_thumb_image" src="images/image4_thumb.jpg" />
+				<img class="etalage_source_image" src="images/image4_large.jpg" />
+			</li>
+		</ul>
+
+		<hr />
+	
+		<h2 id="ex2" class="closer">Example 2</h2>
+	
+		<link type="text/css" rel="stylesheet" href="css/example2.css">
+	
+		<ul id="example2">
+			<li>
+				<img class="etalage_thumb_image" src="images/image5_thumb.jpg" />
+				<img class="etalage_source_image" src="images/image5_large.jpg" />
+			</li>
+		</ul>
+	
+		<hr />
+	
+		<h2 id="ex3" class="closer">Example 3</h2>
+	
+		<link type="text/css" rel="stylesheet" href="css/example3.css">
+	
+		<ul id="example3">
+			<li>
+				<img class="etalage_thumb_image" src="images/image6_thumb.jpg" />
+				<img class="etalage_source_image" src="images/image6_large.jpg" />
+			</li>
+			<li>
+				<img class="etalage_thumb_image" src="images/image7_thumb.jpg" />
+				<img class="etalage_source_image" src="images/image7_large.jpg" />
+			</li>
+			<li>
+				<img class="etalage_thumb_image" src="images/image8_thumb.jpg" />
+				<img class="etalage_source_image" src="images/image8_large.jpg" />
+			</li>
+			<li>
+				<img class="etalage_thumb_image" src="images/image9_thumb.jpg" />
+				<img class="etalage_source_image" src="images/image9_large.jpg" />
+			</li>
+			<li>
+				<img class="etalage_thumb_image" src="images/image10_thumb.jpg" />
+				<img class="etalage_source_image" src="images/image10_large.jpg" />
+			</li>
+		</ul>
+<div style="text-align:center;clear:both">
+<p>适用浏览器：IE8、360、FireFox、Chrome、Safari、Opera、傲游、搜狗、世界之窗. </p>
+<p>来源：<a href="http://sc.chinaz.com/" target="_blank">站长素材</a></p>
+</div>
+	</div>
+</body>
+</html>

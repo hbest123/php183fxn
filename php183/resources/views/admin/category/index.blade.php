@@ -1,17 +1,19 @@
 @extends('admin.layout')
+
 @section('content')
+
 <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-      分类管理
-        <small>分类列表</small>
+        分类管理
+        <small>列表</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i>主页</a></li>
+        <li><a href="{{ url('/admin/user/add') }}"><i class="fa fa-dashboard"></i> 主页</a></li>
         <li><a href="#">分类管理</a></li>
-        <li class="active">分类列表</li>
+        <li class="active">列表</li>
       </ol>
     </section>
 
@@ -21,75 +23,53 @@
         <div class="col-xs-12">
           <div class="box">
             <div class="box-header">
-              <h3 class="box-title">快速添加</h3>
+              <h3 class="box-title">快速查看分类列表</h3>
             </div>
             <!-- /.box-header -->
             <div class="box-body">
-
-             @if(session('info'))
-              <div class="alert alert-danger">
-                {{ session('info') }}
-            </div>
+            @if(session('info'))
+            	<div class="alert alert-danger">
+            		{{ session('info') }}
+            	</div>
             @endif
-
-              <table id="example2" class="table table-bordered table-hover">
-                <thead>
-                <tr>
-                  <th>ID</th>
-                  <th>分类名</th>
-                  <th>操作</th>
-                </tr>
-                </thead>
-                <tbody>
-                @foreach($data as $key=>$val)
-                <tr class="parent">
-                  <td class="ids">{{$val->id}}</td>
-                  <td class="name">{{$val->name}}</td>
-                  <td><a href="{{ url('/admin/category') }}/{{ $val->id }}/edit">编辑</a>|
-                  <a class="del" href="#">删除</a></td>
-                  <form style="display:none;" action="{{ url('/admin/category') }}/{{ $val->id }}" method="post">
-                  {{ method_field('DELETE') }}
-                  {{ csrf_field() }}
-
-                  </form>
-
-                </tr>
-
-                <!-- Button trigger modal -->
-
-                @endforeach
-                </tbody>
-                
-              </table>
-
-              
+              	<table id="example2" class="table table-bordered table-hover">
+	                <thead>
+		                <tr>
+			                <th>ID</th>
+                      <th>分类名</th>
+			                <th>商品图</th>
+			                <th>操作</th>
+		                </tr>
+		            </thead>
+		            <tbody>
+		               	@foreach($data as $key=>$val)
+		                <tr class="parent">
+		                	<td class="ids">{{ $val->id }}</td>
+                      <td class="name">{{ $val->name }}</td>
+		                	<td><img style="width:40px;height:40px;" src="/uploads/avatar/{{ $val->avatar }}"></td>
+		                	<td><a href="{{ url('/admin/category/') }}/{{ $val->id }}/edit">编辑</a>
+                        <a class="del" href="#">删除</a>
+                      </td>
+                      <form style="display:none" action="{{ url('/admin/category') }}/{{ $val->id }}" method="post">
+                        {{ method_field('DELETE') }}
+                        {{ csrf_field() }}
+                      </form>
+                      
+		                </tr>
+                		@endforeach
+              	</table>
             </div>
-
-            <!-- /.box-body -->
           </div>
-          <!-- /.box -->
-
-          
-          <!-- /.box -->
         </div>
-        <!-- /.col -->
       </div>
-      <!-- /.row -->
     </section>
-    <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
 @endsection
 
 @section('js')
-
-<script type="text/javascript">
-
-$(".del").on('click',function(){
-  $(this).parent().next().submit();
-
-});
-
-</script>
-
+  	<script type="text/javascript">
+      $(".del").on('click',function(){
+          $(this).parent().next().submit();
+      });
+    </script>
 @endsection

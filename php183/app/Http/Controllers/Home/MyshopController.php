@@ -17,4 +17,5 @@ class MyshopController extends Controller
     	
     	return view('home.goods.myshop',['user'=>$user,'userdetail'=>$userdetail]);
     }
+
 }

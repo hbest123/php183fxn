@@ -1,17 +1,18 @@
 @extends('admin.layout')
 
-@section('content');
+@section('content')
+
 <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <section class="content-header">
       <h1>
-       分类管理
+        商品分类管理
         <small>添加</small>
       </h1>
       <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i>主页</a></li>
-        <li><a href="#">分类管理</a></li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> 主页</a></li>
+        <li><a href="#">商品分类管理</a></li>
         <li class="active">添加</li>
       </ol>
     </section>
@@ -26,45 +27,52 @@
             <div class="box-header with-border">
               <h3 class="box-title">快速添加</h3>
             </div>
-
+            
 
             <!-- /.box-header -->
             <!-- form start -->
-            <form role="form" enctype="multipart/form-data" method="post" action="{{url('/admin/category')}}">
-              
-				{{ csrf_field() }}
+            <form role="form" enctype="multipart/form-data" method="post" action="{{url('/admin/category')}}" >
+              {{csrf_field()}}
               <div class="box-body">
-              @if(session('info'))
-              <div class="alert alert-danger">
+                @if(session('info'))
+                <div class="alert alert-danger">
                 {{ session('info') }}
-				</div>
-				@endif
-            	@if (count($errors) > 0)
-   		 	<div class="alert alert-danger">
-        	<ul>
-           	 @foreach ($errors->all() as $error)
-                <li>{{ $error }}</li>
-           	 @endforeach
-        </ul>
-    </div>
-@endif
-				<div class="form-group">
+                </div>
+                @endif
+                
+                @if (count($errors) > 0)
+                  <div class="alert alert-danger">
+                      <ul>
+                          @foreach ($errors->all() as $error)
+                              <li>{{ $error }}</li>
+                          @endforeach
+                      </ul>
+                  </div>
+                @endif
+              	<div class="form-group">
                   <label for="exampleInputName">分类名</label>
-                  <input type="text" name="name" value="{{ old('name') }}" class="form-control" id="exampleInputName" placeholder="请输入分类名">
+                  <input type="text" name="name" value="{{ old('name' )}}" class="form-control" id="exampleInputName" placeholder="请输入分类名">
+                </div>
+        
+                <div class="form-group">
+                  <label for="exampleInputFile">商品图片</label>
+                  <input type="file" name="avatar" id="exampleInputFile">
                 </div>
 
-               <div class="form-group">
-				<label for="exampleInputName">父分类</label>
-				<select name ="pid" class="form-control">
-				<option>请选择分类</option>
-				@foreach($data as $key => $val)
-					<option value="{{ $val->id }}">{{ $val->name }}</option>
-				@endforeach
-				
-				</select>
-               </div>
-               
-              </div>
+                <div class="form-group">
+                	<label for="exampleInputName">父分类</label>
+                	<select name="pid" class="form-control">
+                		<option value="0">根分类</option>
+                		@foreach($data as $key => $val)
+							      <option 
+                     @if($val->pid!=0)
+                          disabled = "disabled"
+                    @endif
+
+                    value="{{ $val->id }}">{{ $val->name }}</option>
+                		@endforeach
+                	</select>
+                </div>
               <!-- /.box-body -->
 
               <div class="box-footer">
@@ -72,14 +80,14 @@
               </div>
             </form>
           </div>
-
+          <!-- /.box --> 
+          <!-- /.box -->
         </div>
         <!--/.col (left) -->
-       
       </div>
       <!-- /.row -->
     </section>
     <!-- /.content -->
   </div>
-  <!-- /.content-wrapper -->
+
 @endsection

@@ -30,6 +30,8 @@
   <link rel="stylesheet" href="{{asset('/admin/adminlte/plugins/daterangepicker/daterangepicker.css')}}">
   <!-- bootstrap wysihtml5 - text editor -->
   <link rel="stylesheet" href="{{asset('/admin/adminlte/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css')}}">
+  
+
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -307,9 +309,9 @@
       <!-- /.search form -->
       <!-- sidebar menu: : style can be found in sidebar.less -->
       <ul class="sidebar-menu">
-        <li class="header">MAIN NAVIGATION</li>
+        <li class="fa fa-dashboard"><a href="{{url('/admin/index')}}"><i class="fa fa-dashboard"></i> 主页</a></li>
         <li class="active treeview">
-          <a href="#">
+          <a href="">
             <i class="fa fa-dashboard"></i> <span>管理员管理</span>
             <span class="pull-right-container">
               <i class="fa fa-angle-left pull-right"></i>
@@ -347,16 +349,113 @@
           </ul>
         </li>
 
-        <li class="treeview">
+      <li class="active treeview">
           <a href="#">
+            <i class="fa fa-dashboard"></i> <span>商品管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="{{url('/admin/shop/create')}}"><i class="fa fa-circle-o"></i> 商品添加</a></li>
+            <li><a href="{{url('/admin/shop')}}"><i class="fa fa-circle-o"></i> 商品列表</a></li>
+          </ul>
+        </li>
+
+<li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>订单管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            
+            <li><a href="{{url('/admin/order')}}"><i class="fa fa-circle-o"></i> 订单列表</a></li>
+          </ul>
+        </li>
+
+<li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>商品评论管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            
+            <li><a href="{{url('/admin/comment')}}"><i class="fa fa-circle-o"></i> 评论列表</a></li>
+          </ul>
+        </li>
+
+
+
+   <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>友情链接管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="{{url('/admin/friendlink/create')}}"><i class="fa fa-circle-o"></i>添加友情链接</a></li>
+            <li><a href="{{url('/admin/friendlink')}}"><i class="fa fa-circle-o"></i> 友情链接列表</a></li>
+          </ul>
+        </li>
+
+
+  <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>广告管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="{{url('/admin/advertising/create')}}"><i class="fa fa-circle-o"></i>添加广告</a></li>
+            <li><a href="{{url('/admin/advertising')}}"><i class="fa fa-circle-o"></i> 广告列表</a></li>
+          </ul>
+        </li>
+
+
+   <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>热品管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="{{url('/admin/hot/create')}}"><i class="fa fa-circle-o"></i>添加热品</a></li>
+            <li><a href="{{url('/admin/hot')}}"><i class="fa fa-circle-o"></i> 热品列表</a></li>
+          </ul>
+        </li>
+
+
+  <li class="active treeview">
+          <a href="#">
+            <i class="fa fa-dashboard"></i> <span>轮播图管理</span>
+            <span class="pull-right-container">
+              <i class="fa fa-angle-left pull-right"></i>
+            </span>
+          </a>
+          <ul class="treeview-menu">
+            <li class="active"><a href="{{url('/admin/shuff/create')}}"><i class="fa fa-circle-o"></i>添加轮播图</a></li>
+            <li><a href="{{url('/admin/shuff')}}"><i class="fa fa-circle-o"></i>轮播图列表</a></li>
+          </ul>
+        </li>
+
+
+        <li class="treeview">
+          <a href="">
             <i class="fa fa-files-o"></i>
-            <span>Layout Options</span>
+            <span>收货地址管理</span>
             <span class="pull-right-container">
               <span class="label label-primary pull-right">4</span>
             </span>
           </a>
           <ul class="treeview-menu">
-            <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Top Navigation</a></li>
+            <li><a href="{{ url('/admin/address/index') }}"><i class="fa fa-circle-o"></i> 地址列表</a></li>
             <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Boxed</a></li>
             <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Fixed</a></li>
             <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Collapsed Sidebar</a></li>

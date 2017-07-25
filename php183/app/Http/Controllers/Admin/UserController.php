@@ -48,7 +48,7 @@ class UserController extends Controller
         //执行用户添加
 
         $this->validate($request, [
-        'name' => 'required|unique:user|min:6|max:18',
+        'name' => 'required|unique:user|min:3|max:18',
         'email'=>'email|unique:user',
         'password'=>'required',
         're_password'=>'required|same:password',
@@ -59,7 +59,7 @@ class UserController extends Controller
 
         'name.unique'=>'管理员已存在.',
 
-        'name.min' => '管理员最小6个字符.',
+        'name.min' => '管理员最小3个字符.',
 
         'name.max'=>'管理员最大18个字符.',
         'email.email'=>'请输入正确的邮箱.',

@@ -45,10 +45,10 @@
 							<div class="center">
 								<h1>
 									<i class="ace-icon fa fa-leaf green"></i>
-									<span class="red"></span>
+									<span class="red">欢迎登陆</span>
 									<span class="white" id="id-text2"></span>
 								</h1>
-								<h4 class="blue" id="id-company-text">&copy; 汽车商城</h4>
+								
 							</div>
 
 							<div class="space-6"></div>

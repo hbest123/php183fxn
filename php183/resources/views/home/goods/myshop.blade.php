@@ -51,7 +51,7 @@
             <li class="layout-member signin">
                 <a class="layout-member-link" target="_blank" href="http://me.meizu.com/member/index"><span class="layout-member-username" id="topbarUser">用户571954172</span>的商城<i class="layout-member-triangle"></i></a>
                 <ul class="layout-member-downmenu">
-                    <li class="layout-member-downmenu-item"><a class="layout-member-downmenu-link" data-mdesc="我的商城下拉框1" data-mtype="store_index_yt_my_1" target="_blank" href="http://me.meizu.com/member/address/index">地址管理</a></li>
+                    <li class="layout-member-downmenu-item"><a class="layout-member-downmenu-link" data-mdesc="我的商城下拉框1" data-mtype="store_index_yt_my_1" target="_blank" href="">地址管理</a></li>
                     <li class="layout-member-downmenu-item"><a class="layout-member-downmenu-link" data-mdesc="页头-收藏" data-mtype="store_index_yt_collect" target="_blank" href="http://me.meizu.com/member/favorite/index">我的收藏</a></li>
                     <li class="layout-member-downmenu-item"><a class="layout-member-downmenu-link" data-mdesc="我的商城下拉框2" data-mtype="store_index_yt_my_2" target="_blank" href="http://mcycle.meizu.com/repo/ticket/list">我的回购券</a></li>
                     <li class="layout-member-downmenu-item"><a class="layout-member-downmenu-link" data-mdesc="我的商城下拉框3" data-mtype="store_index_yt_my_3" target="_blank" href="http://me.meizu.com/member/advice/index">问题反馈</a></li>
@@ -110,7 +110,7 @@
             <a href="http://mcycle.meizu.com/repo/order/list" class="ml " data-mtype="store_mc_order_mcycle" data-mdesc="我的回购单">我的回购单</a>
             <a href="http://insurance.meizu.com/list/insurance.html" class="ml " data-mtype="store_mc_order_insurance" data-mdesc="我的意外保">我的意外保</a>
             <a href="javascript:;" class="type-title"><i class="iconfont icon-selfCenter"></i>个人中心</a>
-            <a href="http://me.meizu.com/member/address/index" class="ml " data-mtype="store_mc_me_address" data-mdesc="地址管理">地址管理</a>
+            <a href="{{ url('/home/address/create') }}" class="ml " data-mtype="store_mc_me_address" data-mdesc="地址管理">地址管理</a>
             <a href="http://me.meizu.com/member/favorite/index" class="ml " data-mtype="store_mc_me_favorite" data-mdesc="我的收藏">我的收藏</a>
             <a href="http://me.meizu.com/member/message/index" class="ml " data-mtype="store_mc_me_msg" data-mdesc="消息提醒">消息提醒</a>
             <a href="http://me.meizu.com/member/advice/index" class="ml " data-mtype="store_mc_me_suggest" data-mdesc="建议反馈">建议反馈</a>

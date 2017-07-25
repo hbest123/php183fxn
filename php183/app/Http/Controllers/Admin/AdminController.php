@@ -17,7 +17,7 @@ class AdminController extends Controller
     {	
 
         $this->validate($request, [
-        'name' => 'required|unique:admin|min:6|max:18',
+        'name' => 'required|unique:admin|min:3|max:18',
         'email'=>'email|unique:admin',
         'password'=>'required',
         're_password'=>'required|same:password',
@@ -28,7 +28,7 @@ class AdminController extends Controller
 
         'name.unique'=>'管理员已存在.',
 
-        'name.min' => '管理员最小6个字符.',
+        'name.min' => '管理员最小3个字符.',
 
         'name.max'=>'管理员最大18个字符.',
         'email.email'=>'请输入正确的邮箱.',

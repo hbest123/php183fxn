@@ -10,14 +10,14 @@
     <link href="https://store.res.meizu.com/layout/img/favicon-2e71785f44.ico" rel="icon" type="image/x-icon">
     <meta name="description" content="会员中心，地址管理">
     <meta name="Keywords" content="魅族手机官网商城、魅族官方在线商店、魅族在线商城、魅族官网在线商店、魅族商城">
-    <link rel="stylesheet" href="/home/homelte/mei/address_files/css/layout-51312a08ab.css">
+    <link rel="stylesheet" href="{{ asset('/home/meizu/css/layout-51312a08ab.css') }}">
 
     <!--[if lt IE 9]>
     <script src="//store.res.meizu.com/layout/js/html5shiv-3ed50bb69a.js" type="text/javascript"></script>
     <script src="//store.res.meizu.com/layout/js/es5-shim-50bbaee56e.js" type="text/javascript"></script>
     <![endif]-->
-    <link rel="stylesheet" href="/home/homelte/mei/address_files/css/address-90a22321fb.css">
-    <link rel="stylesheet" href="/home/homelte/mei/address_files/css/site-base.css">
+    <link rel="stylesheet" href="{{ asset('/home/meizu/css/address-90a22321fb.css') }}">
+    <link rel="stylesheet" href="{{ asset('/home/meizu/css/site-base.css') }}">
 </head>
 <body>
 <!-- common header -->
@@ -61,7 +61,7 @@
 
         </ul>
     </div>
-</div><script charset="utf-8" src="address_files/v.htm"></script><script src="address_files/hm.js"></script><script src="address_files/flow.js"></script><script src="address_files/analytics-min.js"></script><script>
+</div><script charset="utf-8" src="address_files/v.htm"></script><script src="{{ asset('/home/meizu/js/hm.js') }}"></script><script src="address_files/flow.js"></script><script src="{{ asset('/home/meizu/js/analytics-min.js') }}"></script><script>
     var layoutHeaderData = {
         header: [{"id":25,"href":"https://lists.meizu.com/page/list?categoryid=73","commodityType":0,"name":"全部分类","children":[{"name":"手机","href":"http://lists.meizu.com/page/list/?categoryid=76","price":0.000,"originalPrice":0.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/00/14/Cgbj0VjlsPGAIU-VAAqnoNZJkt8948.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":0},{"name":"数码影音","href":"http://lists.meizu.com/page/list/?categoryid=231","price":0.000,"originalPrice":0.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/41/Cgbj0FjlsPCAbjRmAAaQNt-KZ6Q072.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":0},{"name":"智能设备","href":"http://lists.meizu.com/page/list/?categoryid=153","price":0.000,"originalPrice":0.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/00/14/Cgbj0VjlsPKAc9eUAALQF0POZTo904.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":0},{"name":"智能穿戴","href":"http://lists.meizu.com/page/list/?categoryid=174","price":0.000,"originalPrice":0.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/41/Cgbj0FjlsPGAJIZIAATg2-3hRQ4628.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":0},{"name":"游戏设备","href":"http://lists.meizu.com/page/list/?categoryid=181","price":0.000,"originalPrice":0.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/41/Cgbj0FjlsPGALkdkAATOlMGeplg965.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":0},{"name":"手机配件","href":"http://lists.meizu.com/page/list/?categoryid=186","price":0.000,"originalPrice":0.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/41/Cgbj0FjlsPGAUklnAASPiYZvwZ8694.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":0},{"name":"办公存储","href":"http://lists.meizu.com/page/list/?categoryid=227","price":0.000,"originalPrice":0.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/00/14/Cgbj0VjlsPGAB1CDAAfX3jfKrg0412.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":0},{"name":"生活周边","href":"http://lists.meizu.com/page/list/?categoryid=222","price":0.000,"originalPrice":0.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/00/14/Cgbj0VjlsPCAecrdAAa_FIBfrjA141.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":0}],"more":[]},{"id":18,"href":"https://lists.meizu.com/page/list?categoryid=76&features=80%3A18778%2C21896%2C9%2C12529%2C22216%2C18382","commodityType":1,"name":"PRO手机","children":[{"name":"魅族PRO 6 Plus","href":"https://detail.meizu.com/item/pro6plus.html","price":2699.000,"originalPrice":2999.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/00/DC/CnQOjVhjjb6AcDdoABXIbr6WvK8260_126x126.png"},"goodType":0,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":1,"autoPrice":0,"pageGoodsDiscountMqSku":{"itemId":10637},"sellingPoint":"性能旗舰 冷静表现"},{"name":"魅族PRO 6s","href":"https://detail.meizu.com/item/pro_6s.html","price":2299.000,"originalPrice":2499.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/00/C4/CnQOjVhAAfGATHD5AA1jPCtyxxQ710_126x126.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":1,"autoPrice":0,"pageGoodsDiscountMqSku":{"itemId":10560}},{"name":"魅族PRO 6","href":"https://detail.meizu.com/item/meizu_pro6.html","price":2299.000,"originalPrice":0.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/00/30/Cgbj0VkP3IaAMo4RABG5x6Omz88935_126x126.png"},"goodType":0,"tagColour":"","displayStartPriceTag":1,"displayOriginalPrice":0,"autoPrice":0,"pageGoodsDiscountMqSku":{"itemId":10167},"sellingPoint":"最高立减400元"}],"more":[]},{"id":21,"href":"https://lists.meizu.com/page/list?categoryid=76&features=80%3A3%2C19475%2C5%2C10%2C11760%2C22119%2C868%2C1133%2C18237%2C22214%2C20724%2C22215%2C23107%2C19242%2C19243%2C20374%2C20100%2C21854%2C20579%2C20580%2C22463%2C18732","commodityType":1,"name":"魅蓝手机","children":[{"name":"魅蓝 A5","href":"https://detail.meizu.com/item/meilana5.html","price":699.000,"originalPrice":0.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/B2/Cgbj0VlcXwaAJ3syAABXVIBRp8M285_126x126.jpg"},"goodType":0,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":0,"pageGoodsDiscountMqSku":{"itemId":10947},"sellingPoint":"7月3日10:00 准时开售"},{"name":"魅蓝 E2","href":"https://detail.meizu.com/item/meilane2.html","price":1299.000,"originalPrice":0.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/59/Cgbj0FkAVOCASFx2AAB6yRT6jV8170_126x126.jpg"},"goodType":0,"tagColour":"","displayStartPriceTag":1,"displayOriginalPrice":0,"autoPrice":0,"pageGoodsDiscountMqSku":{"itemId":10911},"sellingPoint":"4月29日10点，首发开售，6期免息"},{"name":"魅蓝 5s","href":"http://detail.meizu.com/item/meilan5s.html","price":888.000,"originalPrice":0.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/28/CnQOjViwBUiAZjKqAAndI9Fz2pU065_126x126.png"},"goodType":0,"tagColour":"","displayStartPriceTag":1,"displayOriginalPrice":0,"autoPrice":0,"pageGoodsDiscountMqSku":{"itemId":10761},"sellingPoint":"32G套餐版，购机享3期免息"},{"name":"魅蓝 Note5","href":"https://detail.meizu.com/item/meilannote5.html","price":899.000,"originalPrice":999.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/35/CnQOjVjCTEWANnKrAAtuFSxnh1Q016_126x126.png"},"goodType":0,"tagColour":"","displayStartPriceTag":1,"displayOriginalPrice":1,"autoPrice":0,"pageGoodsDiscountMqSku":{"itemId":10638},"sellingPoint":"购64G版本，享6期免息"},{"name":"魅蓝 X","href":"https://detail.meizu.com/item/meilanx.html","price":1699.000,"originalPrice":1699.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/00/C3/CnQOjVg-j0uAWlJIAAj4ScedJ9k483_126x126.png"},"goodType":1,"tagColour":"","displayStartPriceTag":1,"displayOriginalPrice":0,"autoPrice":0,"pageGoodsDiscountMqSku":{"itemId":10618}},{"name":"魅蓝 5","href":"https://detail.meizu.com/item/meilan5.html","price":788.000,"originalPrice":0.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/00/DB/Cix_s1hhz22AIuezAAuqcqE5YHc854_126x126.png"},"goodType":1,"tagColour":"","displayStartPriceTag":1,"displayOriginalPrice":0,"autoPrice":0,"pageGoodsDiscountMqSku":{"itemId":10550},"sellingPoint":"大屏幕，大电池"},{"name":"魅蓝 E","href":"https://detail.meizu.com/item/meilan_e1.html","price":1099.000,"originalPrice":0.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/A2/Cgbj0FlZqBeAEpWNAAtHG2nRyAc153_126x126.png"},"goodType":0,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":0,"pageGoodsDiscountMqSku":{"itemId":10387},"sellingPoint":"领券减50元 购机再送自拍杆"},{"name":"魅蓝 Max","href":"https://detail.meizu.com/item/meilan_max1.html","price":1699.000,"originalPrice":1699.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/00/D0/CnQOjVhPyJ-AW1LQAAvjYcX8eAE808_126x126.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":0,"pageGoodsDiscountMqSku":{"itemId":10478}}],"more":[]},{"id":24,"href":"https://lists.meizu.com/page/list?categoryid=76&features=80%3A8%2C18136%2C20098","commodityType":1,"name":"MX手机","children":[{"name":"魅族 MX6","href":"https://detail.meizu.com/item/mx6.html","price":1599.000,"originalPrice":0.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/00/0E/Cgbj0VjZzjiAMGEuAA7OmPNvWD8625_126x126.png"},"goodType":0,"tagColour":"","displayStartPriceTag":1,"displayOriginalPrice":0,"autoPrice":1,"pageGoodsDiscountMqSku":{"itemId":10314}}],"more":[]},{"id":19,"href":"http://lists.meizu.com/page/list/?categoryid=231","commodityType":1,"name":"数码配件","children":[{"name":"魅族EP51蓝牙运动耳机","href":"https://detail.meizu.com/item/meizu_ep51.html?skuid=696","price":269.000,"originalPrice":269.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/9B/Cgbj0FlIhpOAZfAeAAHOwfpsRUs639_126x126.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":1,"pageGoodsDiscountMqSku":{"itemId":10155},"sellingPoint":"明亮清晰的高音 强有力的低音"},{"name":"魅族HD50头戴式耳机","href":"https://detail.meizu.com/item/meizu_hd50.html?skuid=839","price":399.000,"originalPrice":399.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/98/Cgbj0FlFVNOAf-qRAATZrGgT1ak741_126x126.png"},"goodType":1,"tagThings":"热卖","tagColour":"#f59646","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":1,"pageGoodsDiscountMqSku":{"itemId":10017},"sellingPoint":"清新简洁，有音质更有颜值"},{"name":"魅族 EP2X耳机","href":"https://detail.meizu.com/item/ep_2x.html?skuid=2505","price":129.000,"originalPrice":129.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/9B/Cgbj0FlIhkyAeuFqAAErzSizI8c740_126x126.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":1,"pageGoodsDiscountMqSku":{"itemId":10563},"sellingPoint":"契合声音的流动之美"},{"name":"魅族蓝牙通话耳机","href":"https://detail.meizu.com/item/meizu_erji.html?skuid=2823","price":89.000,"originalPrice":89.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/A8/Cgbj0VlIhwWAcxAiAAL5gzRzFIY024_126x126.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":1,"pageGoodsDiscountMqSku":{"itemId":10641},"sellingPoint":"经典小圆点，一键集大成"},{"name":"魅族蓝牙小音箱","href":"https://detail.meizu.com/item/meizu_yinxiang_a20.html?skuid=3569","price":169.000,"originalPrice":169.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/A8/Cgbj0VlIhnOAFP1PAAbboUvsAC4345_126x126.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":1,"pageGoodsDiscountMqSku":{"itemId":10760},"sellingPoint":"好音感 直达心灵"},{"name":"魅族移动电源（标准版）","href":"https://detail.meizu.com/item/mpower_m8e.html?skuid=1061","price":99.000,"originalPrice":99.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/A9/Cgbj0VlJ2E-AfJshAAKdyPUHRpQ241_126x126.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":1,"pageGoodsDiscountMqSku":{"itemId":10227},"sellingPoint":"素雅百搭 颜值典范"},{"name":"铁三角 ATH-EQ300M 耳机","href":"https://detail.meizu.com/item/ATH_EQ300M.html?skuid=3978","price":138.000,"originalPrice":138.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/9C/Cgbj0FlMyOeANQdKAACW7PIbLZU073_126x126.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":1,"pageGoodsDiscountMqSku":{"itemId":10842},"sellingPoint":"运动 出街利器 人声靓丽"},{"name":"JBL GO音乐金砖 蓝牙音响","href":"https://detail.meizu.com/item/JBL_JBLGO_LC.html?skuid=3078","price":268.000,"originalPrice":268.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/11/Cix_s1iZNteAYXd6AA8rGU1paRA348_126x126.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":1,"pageGoodsDiscountMqSku":{"itemId":10678},"sellingPoint":"降噪麦克风  一键接听通话"}],"more":[]},{"id":20,"href":"http://lists.meizu.com/page/list/?categoryid=153","commodityType":1,"name":"智能设备","children":[{"name":"魅族手环","href":"https://detail.meizu.com/item/meizu_shouhuan_h1.html?skuid=3455","price":229.000,"originalPrice":229.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/23/Cix_s1imq8-AZlLQAAOqzSlfPuA761_126x126.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":1,"pageGoodsDiscountMqSku":{"itemId":10722},"sellingPoint":"腕间流动的心率专家"},{"name":"魅族盒子","href":"https://detail.meizu.com/item/meizu_hezi.html?skuid=2463","price":399.000,"originalPrice":299.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/9B/Cgbj0FlIh2mAbWEnAAGoLQ8h81w399_126x126.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":1,"pageGoodsDiscountMqSku":{"itemId":10546},"sellingPoint":"一键找回遥控器"},{"name":"魅族路由器 极速版","href":"https://detail.meizu.com/item/router_f1.html?skuid=1112","price":199.000,"originalPrice":199.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/A8/Cgbj0VlIh62APAl_AABXVrwLVgU248_126x126.jpg"},"goodType":1,"tagThings":"特惠","tagColour":"#f0415f","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":1,"pageGoodsDiscountMqSku":{"itemId":10241},"sellingPoint":"天生不凡 快狠稳"},{"name":"魅族智能体脂秤","href":"https://detail.meizu.com/item/smartscale.html?skuid=4435","price":169.000,"originalPrice":169.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/9B/Cgbj0FlIh8GAPJnNAAGCK4nlrc0593_126x126.png"},"goodType":1,"tagThings":"特惠","tagColour":"#f0415f","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":1,"pageGoodsDiscountMqSku":{"itemId":10944},"sellingPoint":"精准的数字，才是真实的你"},{"name":"乐心心率手环MAMBO2","href":"https://detail.meizu.com/item/mambo2.html?skuid=2448","price":169.000,"originalPrice":169.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/00/E6/Cix_s1hrFXmAUuv8AAH8vdkEC9M905_126x126.png"},"goodType":1,"tagThings":"特惠","tagColour":"#f0415f","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":1,"pageGoodsDiscountMqSku":{"itemId":10541},"sellingPoint":"超长续航 防水性能"},{"name":"暴风魔镜S1 智能VR眼镜","href":"https://detail.meizu.com/item/BF_S1_android.html?skuid=3189","price":199.000,"originalPrice":199.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/14/CnQOjVidYEGALArbAAHFhtrFdCs403_126x126.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":1,"pageGoodsDiscountMqSku":{"itemId":10698},"sellingPoint":"轻出新境界  近视党福音"},{"name":"飞智黑武士蓝牙无线手柄","href":"https://detail.meizu.com/item/feizhi_shoubing.html?skuid=1442","price":116.000,"originalPrice":116.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/9C/Cgbj0FlMyX6Ae6ycAATDVSjZmTU411_126x126.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":1,"pageGoodsDiscountMqSku":{"itemId":10320},"sellingPoint":"正版游戏云端适配"},{"name":"雷柏无线超薄键鼠套装9060","href":"https://detail.meizu.com/item/RAPOO_9060.html?skuid=3746","price":169.000,"originalPrice":169.000,"pic":{"imgSrc":"//openfile.meizu.com/group1/M00/01/AA/Cgbj0VlQtVCAGxApAAR053u7D6s226_126x126.png"},"goodType":1,"tagColour":"","displayStartPriceTag":0,"displayOriginalPrice":0,"autoPrice":1,"pageGoodsDiscountMqSku":{"itemId":10802},"sellingPoint":"紧凑设计 简单便捷"}],"more":[]}]
     };
@@ -132,7 +132,9 @@
                         <span class="title rollit">新增收货地址</span>
                         <span class="gray">（您目前已有地址<i class="already">1</i>个，最多还可以增加<i class="settle">9</i>个）</span>
                     </div>
-                    <form id="valid-form">
+                    <form role="form" enctype="multipart/form-data" method="post" action="{{url('/home/address')}}">
+              
+                    {{ csrf_field() }}
                         <!-- 修改地址时要用的地址id -->
                         <input class="addressId" value="" type="hidden">
 
@@ -140,84 +142,27 @@
                             <div class="row namePhone clearfix">
                                 <div class="f-fl addressName">
                                     <span>收货人姓名<i class="mark">*</i></span>
-                                    <input id="name" class="varify" name="receiver" placeholder="长度不超过15个字" maxlength="15" type="text">
+                                    <input id="name" class="varify" name="receive" placeholder="长度不超过15个字" maxlength="15" type="text">
                                 </div>
                                 <div class="f-fl addressPhone">
                                     <span>收货人手机号<i class="mark">*</i></span>
-                                    <input id="phone" name="telNumber" class="varify" placeholder="请输入11位手机号" maxlength="11" type="text">
+                                    <input id="phone" name="phone" class="varify" placeholder="请输入11位手机号" maxlength="11" type="text">
                                 </div>
                             </div>
-                            <div class="row clearfix receverAddress">
-                                <span class="f-fl">收货人地址<i class="mark">*</i></span>
-                                <div class="mzui_select mzui_select_province f-fl">
-                                    <input readonly="true" class="mzui_select_trigger province" placeholder="省/直辖市" type="text">
-                                    <select class="provinceId" name="provinceId">
-                                        <option value="" style="display:none" selected="selected"></option>
-                                                <option value="2911">北京</option>
-                                                <option value="14848">天津</option>
-                                                <option value="7450">吉林省</option>
-                                                <option value="8452">辽宁省</option>
-                                                <option value="16860">浙江省</option>
-                                                <option value="1">福建省</option>
-                                                <option value="16624">上海</option>
-                                                <option value="18482">广东省</option>
-                                                <option value="21612">海南省</option>
-                                                <option value="41143">湖北省</option>
-                                                <option value="42634">湖南省</option>
-                                                <option value="36793">安徽省</option>
-                                                <option value="15121">江苏省</option>
-                                                <option value="1214">江西省</option>
-                                                <option value="27304">四川省</option>
-                                                <option value="35714">重庆</option>
-                                                <option value="34187">云南省</option>
-                                                <option value="23366">贵州省</option>
-                                                <option value="20238">广西壮族自治区</option>
-                                                <option value="32166">西藏自治区</option>
-                                                <option value="11241">山东省</option>
-                                                <option value="38498">河南省</option>
-                                                <option value="21894">甘肃省</option>
-                                                <option value="3251">河北省</option>
-                                                <option value="10088">内蒙古自治区</option>
-                                                <option value="25024">宁夏回族自治区</option>
-                                                <option value="25305">青海省</option>
-                                                <option value="13289">山西省</option>
-                                                <option value="25761">陕西省</option>
-                                                <option value="32939">新疆维吾尔自治区</option>
-                                                <option value="5700">黑龙江省</option>
-                                    </select>
-                                </div>
-                                <div class="mzui_select mzui_select_city f-fl">
-                                    <input readonly="true" class="mzui_select_trigger city" placeholder="城市" type="text">
-                                    <select class="cityId" name="cityId">
-                                    </select>
-                                </div>
-                                <div class="mzui_select mzui_select_area f-fl">
-                                    <input readonly="true" class="mzui_select_trigger area" placeholder="区/县" type="text">
-                                    <select class="areaId" name="areaId">
-                                    </select>
-                                </div>
-                                <div class="mzui_select mzui_select_town f-fl">
-                                    <input readonly="true" class="mzui_select_trigger town" placeholder="乡镇/街道" type="text">
-                                    <select class="townId" name="townId">
-                                    </select>
-                                </div>
-                                <div class="mzui_select_other hide">
-                                    <input class="otherAddress _otherAddress" placeholder="其他" type="text">
-                                </div>
-                            </div>
+                           
                             <div class="row  detailAddress">
                                 <span>详细地址<i class="mark">*&nbsp;&nbsp;&nbsp;</i></span>
-                                <input id="detailAddress" name="address" class="varify" placeholder="请输入不少于4不超过50个字的详细地址，例如：路名，门牌号" minlength="4" maxlength="50" type="text">
+                                <input id="detailAddress" name="location" class="varify" placeholder="请输入不少于4不超过50个字的详细地址，例如：路名，门牌号" minlength="4" maxlength="50" type="text">
                             </div>
                             <div class="opreat">
                                 <label for="default">
                                     <input id="default" class="setDefault" name="isDefault" type="checkbox">设为默认
                                 </label>
-                                <a href="javascript:;" class="saveAddress">保存</a>
+                                <button type="submit">保存</button>
                             </div>
                         </div>
                     </form>
-					
+                    
                     <div class="list">
                         <div class="row">
                             <div class="title">
@@ -333,7 +278,7 @@
                     <li>
                         <a class="layout-footer-nav-link layout-footer-nav-wechat" href="javascript:;" data-mdesc="关注我们下第4个坑" data-mtype="store_index_yw_follow_4">
                             官方微信
-                            <img class="layout-footer-nav-wechat-img" src="/home/homelte/mei/address_files/images/weixin.png" alt="微信二维码">
+                            <img class="layout-footer-nav-wechat-img" src="{{ asset('/home/meizu/images/weixin.png') }}" alt="微信二维码">
                         </a>
                     </li>
                 </ul>
@@ -369,14 +314,14 @@
     </div>
 </div>
 
-<script src="/home/homelte/mei/address_files/js/layout-ca70dcecd0.js" type="text/javascript"></script>
-    <script type="text/javascript" src="/home/homelte/mei/address_files/js/address-b2e4d21ffc.js"></script><div class="mzui_select_content" id="mzuiSelect-provinceId"><ul><li class="mzui_select_item mzui_select_item_selected" data-value="" data-zipcode="undefined"></li><li class="mzui_select_item" data-value="2911" data-zipcode="undefined">北京</li><li class="mzui_select_item" data-value="14848" data-zipcode="undefined">天津</li><li class="mzui_select_item" data-value="7450" data-zipcode="undefined">吉林省</li><li class="mzui_select_item" data-value="8452" data-zipcode="undefined">辽宁省</li><li class="mzui_select_item" data-value="16860" data-zipcode="undefined">浙江省</li><li class="mzui_select_item" data-value="1" data-zipcode="undefined">福建省</li><li class="mzui_select_item" data-value="16624" data-zipcode="undefined">上海</li><li class="mzui_select_item" data-value="18482" data-zipcode="undefined">广东省</li><li class="mzui_select_item" data-value="21612" data-zipcode="undefined">海南省</li><li class="mzui_select_item" data-value="41143" data-zipcode="undefined">湖北省</li><li class="mzui_select_item" data-value="42634" data-zipcode="undefined">湖南省</li><li class="mzui_select_item" data-value="36793" data-zipcode="undefined">安徽省</li><li class="mzui_select_item" data-value="15121" data-zipcode="undefined">江苏省</li><li class="mzui_select_item" data-value="1214" data-zipcode="undefined">江西省</li><li class="mzui_select_item" data-value="27304" data-zipcode="undefined">四川省</li><li class="mzui_select_item" data-value="35714" data-zipcode="undefined">重庆</li><li class="mzui_select_item" data-value="34187" data-zipcode="undefined">云南省</li><li class="mzui_select_item" data-value="23366" data-zipcode="undefined">贵州省</li><li class="mzui_select_item" data-value="20238" data-zipcode="undefined">广西壮族自治区</li><li class="mzui_select_item" data-value="32166" data-zipcode="undefined">西藏自治区</li><li class="mzui_select_item" data-value="11241" data-zipcode="undefined">山东省</li><li class="mzui_select_item" data-value="38498" data-zipcode="undefined">河南省</li><li class="mzui_select_item" data-value="21894" data-zipcode="undefined">甘肃省</li><li class="mzui_select_item" data-value="3251" data-zipcode="undefined">河北省</li><li class="mzui_select_item" data-value="10088" data-zipcode="undefined">内蒙古自治区</li><li class="mzui_select_item" data-value="25024" data-zipcode="undefined">宁夏回族自治区</li><li class="mzui_select_item" data-value="25305" data-zipcode="undefined">青海省</li><li class="mzui_select_item" data-value="13289" data-zipcode="undefined">山西省</li><li class="mzui_select_item" data-value="25761" data-zipcode="undefined">陕西省</li><li class="mzui_select_item" data-value="32939" data-zipcode="undefined">新疆维吾尔自治区</li><li class="mzui_select_item" data-value="5700" data-zipcode="undefined">黑龙江省</li></ul></div><div class="mzui_select_content" id="mzuiSelect-cityId"><ul></ul></div><div class="mzui_select_content" id="mzuiSelect-areaId"><ul></ul></div><div class="mzui_select_content" id="mzuiSelect-townId"><ul></ul></div>
+<script src="{{ asset('/home/meizu/js/layout-ca70dcecd0.js') }}" type="text/javascript"></script>
+    <script type="text/javascript" src="{{ asset('/home/meizu/js/address-b2e4d21ffc.js') }}"></script><div class="mzui_select_content" id="mzuiSelect-provinceId"><ul><li class="mzui_select_item mzui_select_item_selected" data-value="" data-zipcode="undefined"></li><li class="mzui_select_item" data-value="2911" data-zipcode="undefined">北京</li><li class="mzui_select_item" data-value="14848" data-zipcode="undefined">天津</li><li class="mzui_select_item" data-value="7450" data-zipcode="undefined">吉林省</li><li class="mzui_select_item" data-value="8452" data-zipcode="undefined">辽宁省</li><li class="mzui_select_item" data-value="16860" data-zipcode="undefined">浙江省</li><li class="mzui_select_item" data-value="1" data-zipcode="undefined">福建省</li><li class="mzui_select_item" data-value="16624" data-zipcode="undefined">上海</li><li class="mzui_select_item" data-value="18482" data-zipcode="undefined">广东省</li><li class="mzui_select_item" data-value="21612" data-zipcode="undefined">海南省</li><li class="mzui_select_item" data-value="41143" data-zipcode="undefined">湖北省</li><li class="mzui_select_item" data-value="42634" data-zipcode="undefined">湖南省</li><li class="mzui_select_item" data-value="36793" data-zipcode="undefined">安徽省</li><li class="mzui_select_item" data-value="15121" data-zipcode="undefined">江苏省</li><li class="mzui_select_item" data-value="1214" data-zipcode="undefined">江西省</li><li class="mzui_select_item" data-value="27304" data-zipcode="undefined">四川省</li><li class="mzui_select_item" data-value="35714" data-zipcode="undefined">重庆</li><li class="mzui_select_item" data-value="34187" data-zipcode="undefined">云南省</li><li class="mzui_select_item" data-value="23366" data-zipcode="undefined">贵州省</li><li class="mzui_select_item" data-value="20238" data-zipcode="undefined">广西壮族自治区</li><li class="mzui_select_item" data-value="32166" data-zipcode="undefined">西藏自治区</li><li class="mzui_select_item" data-value="11241" data-zipcode="undefined">山东省</li><li class="mzui_select_item" data-value="38498" data-zipcode="undefined">河南省</li><li class="mzui_select_item" data-value="21894" data-zipcode="undefined">甘肃省</li><li class="mzui_select_item" data-value="3251" data-zipcode="undefined">河北省</li><li class="mzui_select_item" data-value="10088" data-zipcode="undefined">内蒙古自治区</li><li class="mzui_select_item" data-value="25024" data-zipcode="undefined">宁夏回族自治区</li><li class="mzui_select_item" data-value="25305" data-zipcode="undefined">青海省</li><li class="mzui_select_item" data-value="13289" data-zipcode="undefined">山西省</li><li class="mzui_select_item" data-value="25761" data-zipcode="undefined">陕西省</li><li class="mzui_select_item" data-value="32939" data-zipcode="undefined">新疆维吾尔自治区</li><li class="mzui_select_item" data-value="5700" data-zipcode="undefined">黑龙江省</li></ul></div><div class="mzui_select_content" id="mzuiSelect-cityId"><ul></ul></div><div class="mzui_select_content" id="mzuiSelect-areaId"><ul></ul></div><div class="mzui_select_content" id="mzuiSelect-townId"><ul></ul></div>
     <!--common js-->
 <script>
     var __mzt = __mzt || [];
     (function () {
         var hm = document.createElement("script");
-        hm.src = "/home/homelte/mei/address_files/js/analytics-min.js";
+        hm.src = "//sccom.res.meizu.com/js/analytics-min.js";
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();
@@ -386,7 +331,7 @@
     var _hmt = _hmt || [];
     (function () {
         var hm = document.createElement("script");
-        hm.src = ('https:' == document.location.protocol ? 'https://tongji-res.meizu.com' : 'http://tongji-res1.meizu.com') + '/home/homelte/mei/address_files/js/flow.js';
+        hm.src = ('https:' == document.location.protocol ? 'https://tongji-res.meizu.com' : 'http://tongji-res1.meizu.com') + '/resources/tongji/flow.js';
         var s = document.getElementsByTagName("script")[0];
         s.parentNode.insertBefore(hm, s);
     })();

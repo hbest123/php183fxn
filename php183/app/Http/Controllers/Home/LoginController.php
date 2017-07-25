@@ -28,7 +28,7 @@ class LoginController extends Controller
         {
            $admin = \DB::table('user')->where('remember_token',$remember_token)->first();
            //存入session
-           session(['master'=>$admin]);
+           session(['slave'=>$admin]);
 
            return redirect('/home/index')->with(['info'=>'登录成功']);
         }
@@ -56,7 +56,7 @@ class LoginController extends Controller
     		return back()->with(['info'=>'用户名或密码不存在']);
     	}
 
-    	session(['master'=>$user]);
+    	session(['slave'=>$user]);
 
         //写入cookie
         if($request->has('remember_me'))
